@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T13:49:54.657+0530">
-  <deletedFolders>process/Loc_Workout/DW_Sales/DW_Sales</deletedFolders>
-  <deletedFolders>process/Loc_Workout/DW_Sales/MyLocal</deletedFolders>
-  <deletedFolders>process/Loc_Workout/DW_Sales</deletedFolders>
-  <deletedFolders>process/Loc_Workout/MyLocal</deletedFolders>
-  <deletedFolders>process/Loc_Workout</deletedFolders>
-</recyclebin:RecycleBin>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T14:13:14.665+0530"/>
