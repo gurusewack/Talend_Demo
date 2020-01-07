@@ -10,6 +10,16 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/source_product_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/dim_customer_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/stage_store_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/dim_product_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/dim_store_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/source_store_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/source_customer_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/stage_product_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/stage_customer_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/job_random_data_source_stage_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
