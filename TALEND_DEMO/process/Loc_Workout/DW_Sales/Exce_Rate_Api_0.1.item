@@ -214,7 +214,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.INR = input_row.INR;&#13;&#10;//output_row.USD = input_row.USD;&#13;&#10;//output_row.DATE = input_row.DATE;&#10;context.INR = input_row.INR;&#10;System.out.print(context.INR);&#10;context.USD = input_row.USD;&#10;System.out.print(context.USD);&#10;context.EXCE_DATE = input_row.DATE;&#10;System.out.print(context.EXCE_DATE);&#13;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.INR = input_row.INR;&#13;&#10;//output_row.USD = input_row.USD;&#13;&#10;//output_row.DATE = input_row.DATE;&#10;context.INR = input_row.INR;&#10;System.out.println(context.INR);&#10;context.USD = input_row.USD;&#10;System.out.println(context.USD);&#10;context.EXCE_DATE = input_row.DATE;&#10;System.out.println(context.EXCE_DATE);&#13;&#10;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Exchange_Rate" name="tJavaRow_1">
@@ -236,13 +236,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bdbb9165-7832-4681-8534-811bf21f22ce"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cG4SY7JoUqPZTeB3AicU1SzDI9KjDMhyCJdrFv8YfoJPrfUMTfK+OH7XdibOB5dQukEcTw/UhP1M
-Cvz/RdJzKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b37e86e3-cffd-4d1e-ba5d-bf9837827b70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pFuvBjiZuVdalpb/molM9kC+BqNFZFkMAdcIZy8GMSOPZ30m3KhIWSWrgIL/Nz6jc2uX34lgBv3/
-av+uGkoyrA==</DigestValue></Reference></SignedInfo><SignatureValue>T+vmELc7a1gvSw6RqFrMOwgZRE3uHDYm5vHJpthtHGaqtqM0CIKHGCqaDEB/ObjgdwHQiZ7UIfuf
-/kRERhQqrl95Nn3v20M98aeiNjC0xepoMVwEERLOtDT4V9ek8tOG/AecFGDl3SgGJ+0IVcKH4y64
-+RMOKPgtlGq0Xs4Q4vNQ1b1EmD39tTnEhEkp4EW1foTBGz3jcTX6LAiyWw/xg2aGL0oA7DuRgIvi
-q6PVEfArghAIP/mv3mZ9EsQpTqPa9PNt0pOeRNhz/xtTIF9tw5lW63BfgcSgtdSeE0eOLEZGqCW0
-q/5ZX7Wuj7XghMKnAxVSw7GTz/PweztRQxzofA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1bbf4397-cf7e-4999-8bc2-89adfc797bb9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dG3dHWpkIUFJCSa8JBcZPnEUOTNYQe1IIw9QIKLmJgPhwWc33B8tS+e70wQdjfyCaL6LgYcgRTSm
+Dkd813+L4w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3a94fb9a-c37f-4109-8590-e23e836bf3fd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IHvkVOZ7uYi1MsQMaq3DjSuIEP8f/5AsVXRJcbCZ5N4jABZH0tGsNCVh6MNjRhdwLXvAjzOGrFAh
+mUQOoTBR7A==</DigestValue></Reference></SignedInfo><SignatureValue>bRB3zy43H43xFOvdidqe+zzSx7C0gzk1x01LhuLVjvGNNSwYAYpctZQiSwhYBTRRN4VpOccs7R3o
+zeYUanzucLJafk84M1BKH3+uCFvJYEZXc2FcJBxCWBBli4LVJMSrGMXjMjTVEQUW1wN8vJpytAYW
+m9qlTbIHBPNPEfDqjroQ2f93qxI9tS3UCcKvCCmEcRWQbSd+7cF31BlXDIDMd+Gmf624o+SWj+oQ
+p7Y5y56ZA2EMQN2cxTEkZ9SX6KAc3bVY9Nid/CNWFcrP/bAC1zXuU44OxFnZZ6xKvCzTY5fIBN6a
+FQkWU0xH4tml/nJwtlMFxhJcIs4OXYXzroieWw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -264,4 +264,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b37e86e3-cffd-4d1e-ba5d-bf9837827b70" Target="#_bdbb9165-7832-4681-8534-811bf21f22ce"><Timestamp>2020-01-07 11:27:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3a94fb9a-c37f-4109-8590-e23e836bf3fd" Target="#_1bbf4397-cf7e-4999-8bc2-89adfc797bb9"><Timestamp>2020-01-07 11:28:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
