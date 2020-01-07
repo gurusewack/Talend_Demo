@@ -20,6 +20,7 @@
     <module>jobs/process/Loc_Workout/DW_Sales/stage_product_0.1</module>
     <module>jobs/process/Loc_Workout/DW_Sales/stage_customer_0.1</module>
     <module>jobs/process/Loc_Workout/DW_Sales/job_random_data_source_stage_0.1</module>
+    <module>jobs/process/Loc_Workout/DW_Sales/exce_rate_api_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
