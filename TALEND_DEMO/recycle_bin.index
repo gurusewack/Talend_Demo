@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T14:13:14.665+0530"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T14:16:13.862+0530">
+  <deletedFolders>process/Loc_Workout/MyLocal</deletedFolders>
+</recyclebin:RecycleBin>
