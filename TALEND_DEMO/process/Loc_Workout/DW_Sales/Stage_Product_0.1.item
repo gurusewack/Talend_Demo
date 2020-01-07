@@ -219,7 +219,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT  *&#10;FROM&#9;Products WHERE (Products.CreatedDt  &gt;  '&quot;+context.StartDate+&quot;'  AND Products.CreatedDt  &lt;= '&quot;+context.EndDate+&quot;') &#13;&#10;OR (Products.UpdatedDt  &gt;  '&quot;+context.StartDate+&quot;'  AND Products.UpdatedDt  &lt;= '&quot;+context.EndDate+&quot;');&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Products.ProductId,&#13;&#10;&#9;&#9;Products.ProductName,&#13;&#10;&#9;&#9;Products.ProductCode,&#13;&#10;&#9;&#9;Products.Brand,&#13;&#10;&#9;&#9;Products.Catagory,&#13;&#10;&#9;&#9;Products.Price,&#13;&#10;&#9;&#9;Products.CreatedDT,&#13;&#10;&#9;&#9;Products.UpdatedDT&#10;FROM&#9;Products WHERE (Products.CreatedDt  &gt;  '&quot;+context.StartDate+&quot;'  AND Products.CreatedDt  &lt;= '&quot;+context.EndDate+&quot;') &#13;&#10;OR (Products.UpdatedDt  &gt;  '&quot;+context.StartDate+&quot;'  AND Products.UpdatedDt  &lt;= '&quot;+context.EndDate+&quot;');&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -229,13 +229,50 @@
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
     <elementParameter field="TABLE" name="TRIM_COLUMN">
-      <elementValue elementRef="SCHEMA_COLUMN" value="Dynamic_Scm"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ProductCode"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Brand"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Catagory"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Price"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedDT"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LABEL" value="Source_Product_Data"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Products" name="tDBInput_2">
-      <column comment="" key="false" length="-1" name="Dynamic_Scm" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="ProductId" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="ProductName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="ProductCode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Brand" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="Catagory" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="18" name="Price" nullable="true" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="CreatedDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="23" name="UpdatedDT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="448">
@@ -328,7 +365,14 @@
         <mapperTableEntries expression="TalendDate.getCurrentDate() " name="DW_UpdatedDT" nullable="true" type="id_Date"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="Dynamic_Scm" nullable="true" type="id_Dynamic"/>
+        <mapperTableEntries name="ProductId" type="id_Integer"/>
+        <mapperTableEntries name="ProductName" nullable="true" type="id_String"/>
+        <mapperTableEntries name="ProductCode" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Brand" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Catagory" nullable="true" type="id_String"/>
+        <mapperTableEntries name="Price" nullable="true" type="id_BigDecimal"/>
+        <mapperTableEntries name="CreatedDT" nullable="true" type="id_Date"/>
+        <mapperTableEntries name="UpdatedDT" nullable="true" type="id_Date"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row2.ProductId " name="ProductId" operator="=" type="id_Integer"/>
@@ -794,13 +838,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;0;0"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_59dceb12-872a-4e91-af44-37831ffd886c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LAEXxDQScMm3qXAO6USxs4MOoOJS3huESKaIhn78jfukUZufa0ukKDTrruR5dWzre0VuIzNqY8rr
-v9xTdA2XCQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a1fc64f3-690c-4827-80ee-3f11f118dd66"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>xqOnAP3uVlAohX1yfwdwHCCIbSiAANx9l/TLVRxrSqhKY37QjiLBPdNfpqKS305rPYz1dnFYZesn
-xltNmuAkuA==</DigestValue></Reference></SignedInfo><SignatureValue>g5qQ5tfMlsbI+AfIgtwas5AVV9aihbYHXfIHFdwMMl6koHCTjSIx0QXayJfcllxDUQIBR0qYFSiX
-Vdzv0oi2efSS3GYxArNmiKvd3SSWzvyqG3czvc1Vfi7T86dYUW0HXFtyZmwJ4iUnNg7TQytD5ObV
-uHRkbfr6gg1ECTkDXvUL5IJj00uzkBLf1BjAIPd0LtNelxFlzms7LIekzLgjTJpOGjw2GE3OJzsN
-NxQjcOIK0xDJ9mOqobaXHnnPZAh3ipFsR/kkfVryrMRzvf5KF4q6qJBnsdmi6fljyve1j9iu67nv
-iJKZx/CxUHf1/4VtQDwZ0oGE92r0VQski5VloQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bfe48a05-f13d-4044-a05f-ff4244a514bc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>reVXGlgTl25K5DobXLMEvbWhB8pVMsTSwOSUqbxXtl/lcPI285IO3hO+c30yHdjk7pg7vbgKWFrR
+zivg6rCw0Q==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d10d9862-815c-4321-9d6c-78f6beca41df"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X/q9feIefF86AX1GyVF0e2VdCLNBze8Y6U3Zu9lZdAMj/nAedE7+EMWSWF9bTiihy/wJ5C9+/gz7
+vxwqS/eDlw==</DigestValue></Reference></SignedInfo><SignatureValue>o+CHUbC3/iNLRvsKfX4oc1MSMYMN2Alb8/RxHOlso8bYWw5q00z3FKvrNNaewEMPf7PIDou/rfVr
+UXx381syHNUyHjtpvqz9gTXKkMqIlPv1nnejd5M+/fra5h+WloNkjA5ZJWVlarj8vKWlJ6fg1Ms5
+qZVObxv544V3n84I81LYyM+hYKLTrWxV/DPWSszxy4IJpFrvjAwjWcM1AOZRP+eo3k19corm5yTf
+ShOkpb6ZjcZMLMTaP5qMPj07w5M616YEcJCVUOrcwwb/BADoyEHrJ+0uYapW0PHZQzdGafz1UBWB
+cFeLw2WOPqDcH2kijDX1g0h53h69UNG6JMZ0CA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -822,4 +866,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a1fc64f3-690c-4827-80ee-3f11f118dd66" Target="#_59dceb12-872a-4e91-af44-37831ffd886c"><Timestamp>2020-01-07 12:23:20</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d10d9862-815c-4321-9d6c-78f6beca41df" Target="#_bfe48a05-f13d-4044-a05f-ff4244a514bc"><Timestamp>2020-01-07 12:29:31</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
