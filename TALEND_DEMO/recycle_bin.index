@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T12:04:20.215+0530">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-07T12:29:26.336+0530">
   <deletedFolders>process/Loc_Workout/DW_Sales/DW_Sales</deletedFolders>
   <deletedFolders>process/Loc_Workout/DW_Sales/MyLocal</deletedFolders>
   <deletedFolders>process/Loc_Workout/DW_Sales</deletedFolders>
+  <deletedFolders>process/Loc_Workout/MyLocal</deletedFolders>
 </recyclebin:RecycleBin>
