@@ -1,41 +1,200 @@
 package routines;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.util.*;
+import java.util.Calendar;
 
-/*
- * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
- * it must be before the "{talendTypes}" key.
- * 
- * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
- * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
- * Short
- * 
- * 3. {Category} define a category for the Function. it is required. its value is user-defined .
- * 
- * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
- * 
- * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
- * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
- * added. you can have many parameters for the Function.
- * 
- * 5. {example} gives a example for the Function. it is optional.
- */
 public class SalesDataGenerator {
 
     /**
-     * helloExample: not return value, only print "hello" + message.
-     * 
-     * 
      * {talendTypes} String
      * 
-     * {Category} User Defined
+     * {Category} SalesDataGenerator
      * 
-     * {param} string("world") input: The string need to be printed.
-     * 
-     * {example} helloExemple("world") # hello world !.
+     * {example} getStoreName() # Bill.
      */
-    public static void helloExample(String message) {
-        if (message == null) {
-            message = "World"; //$NON-NLS-1$
-        }
-        System.out.println("Hello " + message + " !"); //$NON-NLS-1$ //$NON-NLS-2$
+    public static String getStoreName() {    	
+        String[] list = { "Amazon India", "Flipkart","Paytm", "Snapdeal","eBay India","Zivame",
+        		"Jabong","ShopClues","Myntra","Nykaa","Bigbasket","Pepperfry","Limeroad","UrbanClap",
+        		"Clovia", "Junglee","Koovs","Yepme","Grofers","Rediff","ZopNow","HealthKart",
+        		"Lenskart","MadBid India","Infibeam","ITC Portal", "iBhejo","Patanjali Ayurved",
+        		"SriSriTattva","Croma", "TataCliq","Naaptol India","Nature’s Basket","Giskaa",
+        		"Homeshop18", "Future Bazaar", "Yebhi", "Ajio", "Fabindia", "The North East Store",
+        		"Archies Online","Khadi Natural", "RelianceSMART", "Just Herbs","Shahnaz Husain Group",
+        		"Brindco", "Flavours Of My City", "Firstcry","MeatRoot", "Tanishq Jewellery","Bullion India",
+        		"Happily Unmarried", "AdultProductsIndia","PlaceOfOrigin","Indian Ordnance Factories",
+        		"Decathlon","Funcart", "FengshuiIndia","Netmeds", "Café Coffee Day" }; 
+        Integer random = 0 + ((Long) Math.round(Math.random() * (list.length - 1 - 0))).intValue();
+        // return "ST"+ String.format("%02d", random)+ "-" + list[random];
+        return "ST"+ String.format("%02d", new Random().nextInt(99999 - 10000) + 10000)+ "-" + list[random];        
+    }
+    
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} SalesDataGenerator
+     * 
+     * {example} getUSPhoneNumber() # (575)-669-2993.
+     */
+    public static String getUSPhoneNumber() {
+    	int num1, num2, num3;
+        int set2, set3;        
+        Random generator = new Random();
+        num1 = generator.nextInt(7) + 1;
+        num2 = generator.nextInt(8); 
+        num3 = generator.nextInt(8);
+        
+        set2 = generator.nextInt(643) + 100;        
+        set3 = generator.nextInt(8999) + 1000;
+        return "(" + num1 + "" + num2 + "" + num3 + ")" + "-" + set2 + "-" + set3;
+    }
+    
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} SalesDataGenerator
+     * 
+     * {example} getUSZip() # 14192.
+     */
+    public static String getUSZip() {
+    	Random rand = new Random( System.currentTimeMillis() );
+        return Integer.toString(rand.nextInt(99999 - 10000) + 10000);
+    }
+    
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} SalesDataGenerator
+     *
+     * {param} string("Abraham") First Name
+     *
+     * {param} string("Calvin") Last Name 
+     * 
+     * {example} getEmail("Abraham", "Calvin") # Bill.
+     */
+    public static String getEmail(String FirstName, String LastName) {
+        String[] list = { "aol.com",  "gmail.com", "hotmail.com", "inbox.com", "outlook.com", "protonmail.com", "yahoo.com",
+        		"zohomail.com"}; 
+        Random rand = new Random(); 
+        int rand_int1 = rand.nextInt(Calendar.getInstance().get(Calendar.YEAR) - 1960) + 1960; 
+        Integer random = 0 + ((Long) Math.round(Math.random() * (list.length - 1 - 0))).intValue();
+        return  FirstName.toLowerCase().trim().replace(" ", "_") +"_"+LastName.toLowerCase().trim().replace(" ", "_") +"_"+rand_int1+"@" + list[random];
+    }
+    
+    
+    /**
+     * {talendTypes} String
+     * 
+     * {Category} SalesDataGenerator
+     * 
+     * {example} getProductName() # Sony-Xperia-T3-Smartphone
+     */
+    public static String getProductName() {
+        String[] list = { "Sony-Xperia XZ2-Smartphone",
+        		"Sony-Xperia T3-Smartphone",
+        		"Sony-Xperia XA Ultra Dual SIM-Smartphone",
+        		"Sony-Xperia E3 Dual-Smartphone",
+        		"Apple-iPhone 11-Smartphone",
+        		"Apple-iPhone 11 Pro-Smartphone",
+        		"Apple-iPad 10.2-Tablet",
+        		"Apple-iPad Air-Tablet",
+        		"Apple-iPad Pro 12.9-Tablet",
+        		"Apple-Watch Edition Series 3-Watch",
+        		"Apple-iPhone 6s Plus-Smartphone",
+        		"Apple-MacBook Air Core i5 5th Gen-Laptop",
+        		"Apple-MacBook Air Core i5 8th Gen-Laptop",
+        		"Apple-MacBook Pro Core i9 8th Gen-Laptop",
+        		"Nokia-C1 Android-Smartphone",
+        		"Nokia-X71 Android-Smartphone",
+        		"Huawei-nova 6 5G Android-Smartphone",
+        		"Huawei-Mate 30 Pro 5G Android-Smartphone",
+        		"Huawei-MediaPad M5 Lite 8 Android-Tablet",
+        		"Honor-V30 Android-Smartphone",
+        		"Honor-8S Android-Smartphone",
+        		"Honor-Pad 5 10.1 Android-Tablet",
+        		"Lenovo-K10 Plus Android-Smartphone",
+        		"Lenovo-A6 Note Android-Smartphone",
+        		"Lenovo-Tab M8 (HD) Android-Tablet",
+        		"Lenovo-Z5s Android-Smartphone",
+        		"Lenovo-Yoga S940 Core i7 8th Gen-Laptop",
+        		"Lenovo-Legion Y540 Core i7 9th Gen-Laptop",
+        		"Lenovo-Legion Y520 Core i7 7th Gen-Laptop",
+        		"Dell-XPS 15 Core i9 9th Gen-Laptop",
+        		"Dell-XPS 15 Core i7 8th Gen-Laptop",
+        		"Dell-Inspiron 7000 Core i7 9th Gen-Laptop",
+        		"Microsoft-Surface Core i7 7th Gen-Laptop",
+        		"Microsoft-Surface Book 2 Core i7 8th Gen-Laptop",
+        		"Microsoft-Surface Core i7 7th Gen-Laptop",
+        		"HP-G4 Core i7 7th Gen-Laptop",
+        		"HP-Spectre Folio x360 Core i7 8th Gen-Laptop" }; 
+        Integer random = 0 + ((Long) Math.round(Math.random() * (list.length - 1 - 0))).intValue();
+        return list[random];
+    }
+    
+    /**
+     * {talendTypes} Double
+     * 
+     * {Category} SalesDataGenerator
+     *
+     * {param} string("Tablet") Catagory
+     * 
+     * {example} getPrice("Tablet") # Tablet
+     */
+    public static Double getPrice(String Catagory) {
+    	Double  returnVal =new Double(0);
+    	Random rand = new Random(); 
+    	
+		switch (Catagory) {
+        case "Tablet": returnVal= BigDecimal.valueOf(rand.nextInt(40000 - 6500) + 6500)
+        	    .setScale(2, RoundingMode.HALF_UP)
+        	    .doubleValue(); 
+        		break;
+        case "Smartphone":  returnVal= BigDecimal.valueOf(rand.nextInt(60000 - 9000) + 9000)
+        	    .setScale(2, RoundingMode.HALF_UP)
+        	    .doubleValue();  
+                 break;
+        case "Laptop":  returnVal= BigDecimal.valueOf(rand.nextInt(99999 - 35000) + 35000)
+        	    .setScale(2, RoundingMode.HALF_UP)
+        	    .doubleValue();  
+                 break;
+        case "Watch":  returnVal= BigDecimal.valueOf(rand.nextInt(15000 - 4000) + 4000)
+        	    .setScale(2, RoundingMode.HALF_UP)
+        	    .doubleValue(); 
+                 break;
+        default: returnVal= BigDecimal.valueOf(rand.nextInt(10000 - 35000) + 35000)
+        	    .setScale(2, RoundingMode.HALF_UP)
+        	    .doubleValue(); 
+                 break;
+		}
+        return returnVal;
+    }
+    
+    
+    /**
+     * {talendTypes} Double
+     * 
+     * {Category} SalesDataGenerator
+     *
+     * {param} string("Tablet") Brand
+     * 
+     * {example} getPrice("Tablet") # Tablet
+     */
+    public static String getProductCode(String Catagory, String Brand) {
+    	String  returnVal ="";
+    	Random rand = new Random(); 
+    	
+		switch (Catagory) {
+        case "Tablet": returnVal=Brand.substring(0, 2).toUpperCase() + Catagory.substring(0, 1).toUpperCase() + Integer.toString(rand.nextInt(20000 - 10000) + 10000);
+        		break;
+        case "Smartphone":  returnVal= Brand.substring(0, 2).toUpperCase()+ Catagory.substring(0, 1).toUpperCase()  + Integer.toString(rand.nextInt(30000 - 20000) + 20000);  
+                 break;
+        case "Laptop":  returnVal= Brand.substring(0, 2).toUpperCase()+ Catagory.substring(0, 1).toUpperCase()  + Integer.toString(rand.nextInt(40000 - 30000) + 30000);
+                 break;
+        case "Watch":  returnVal= Brand.substring(0, 2).toUpperCase()+ Catagory.substring(0, 1).toUpperCase()  + Integer.toString(rand.nextInt(50000 - 40000) + 40000);
+                 break;
+        default: returnVal= "PRO" + Integer.toString(rand.nextInt(99999 - 50000) + 50000); 
+                 break;
+		}
+        return returnVal;
     }
 }
