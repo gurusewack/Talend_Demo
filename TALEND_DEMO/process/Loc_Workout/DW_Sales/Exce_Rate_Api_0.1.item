@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="INR" prompt="INR?" promptNeeded="false" repositoryContextId="_CQQNsDFAEeqT7I12pkN6Kw" type="id_Double" value=""/>
+    <contextParameter comment="" name="USD" prompt="USD?" promptNeeded="false" repositoryContextId="_CQQNsDFAEeqT7I12pkN6Kw" type="id_Double" value=""/>
+    <contextParameter comment="" name="EXCE_DATE" prompt="EXCE_DATE?" promptNeeded="false" repositoryContextId="_CQQNsDFAEeqT7I12pkN6Kw" type="id_Date" value=""/>
+  </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
@@ -208,31 +212,12 @@
       <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.1/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
     </nodeData>
   </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
-    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
-    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
-    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
-    <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="INR"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="USD"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="DATE"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-    </elementParameter>
-    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
-    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;//output_row.INR = input_row.INR;&#13;&#10;//output_row.USD = input_row.USD;&#13;&#10;//output_row.DATE = input_row.DATE;&#10;context.INR = input_row.INR;&#10;System.out.print(context.INR);&#10;context.USD = input_row.USD;&#10;System.out.print(context.USD);&#10;context.EXCE_DATE = input_row.DATE;&#10;System.out.print(context.EXCE_DATE);&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="Exchange_Rate" name="tLogRow_1">
+    <metadata connector="FLOW" label="Exchange_Rate" name="tJavaRow_1">
       <column comment="" key="false" length="-1" name="INR" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="USD" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="DATE" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
@@ -242,7 +227,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
-  <connection connectorName="FLOW" label="Exchange_Rate" lineStyle="0" metaname="Exchange_Rate" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_1">
+  <connection connectorName="FLOW" label="Exchange_Rate" lineStyle="0" metaname="Exchange_Rate" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tJavaRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Exchange_Rate"/>
   </connection>
@@ -251,13 +236,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_508f6759-fd9e-4dc1-b987-683df0ef561b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6HcAVsW/81HbuKO79AGOhJtOxy1dSrIoEGNDhEDocNJWtg+T5BEsXu4OYhwD2/5LRbVCB7uIv9PT
-D/fXqIi6NA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d8b5b1ba-3783-46d0-8652-d066c64c2ee7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ttWRMXSkfTzDTARInA2nJbJEXuCOoY0Vg2w2IIJlOZxfhCeJXLLhL8HNoCwXOdfRWoGaInf0M/a5
-3kVG1G8wzQ==</DigestValue></Reference></SignedInfo><SignatureValue>DPeijXueLM41aS2q2x68NavIi7Wx+rcP/PPHo3xxqLh47fknk7cxqv8Y+jDmfxv3a5201nYuEN0k
-fIl9nL+8ZwQntdrxHIDf181f2xyc9sEq7Tf/9SMC7qFLfSgc/R2J/3JPFq1AtiacHJ9M2qzVrNtL
-RTGcttbvBDcKMTSzQhxpii3zq5tV9ZgM2rwmHQdwBTCJp8iLxRhYm/zcJQtksXusrJcak8+YnUJ1
-IJRWj5gz5QM2JdCxYSHw/sajsPu8neEg59eMU4OYRPE7xW6usPJgnMSzD4hp7LO5QAtq4FHoD8MQ
-s+A8QrgVMYqtS8NfFpd67TpUE+wygiAIDdo8qw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_bdbb9165-7832-4681-8534-811bf21f22ce"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cG4SY7JoUqPZTeB3AicU1SzDI9KjDMhyCJdrFv8YfoJPrfUMTfK+OH7XdibOB5dQukEcTw/UhP1M
+Cvz/RdJzKQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b37e86e3-cffd-4d1e-ba5d-bf9837827b70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pFuvBjiZuVdalpb/molM9kC+BqNFZFkMAdcIZy8GMSOPZ30m3KhIWSWrgIL/Nz6jc2uX34lgBv3/
+av+uGkoyrA==</DigestValue></Reference></SignedInfo><SignatureValue>T+vmELc7a1gvSw6RqFrMOwgZRE3uHDYm5vHJpthtHGaqtqM0CIKHGCqaDEB/ObjgdwHQiZ7UIfuf
+/kRERhQqrl95Nn3v20M98aeiNjC0xepoMVwEERLOtDT4V9ek8tOG/AecFGDl3SgGJ+0IVcKH4y64
++RMOKPgtlGq0Xs4Q4vNQ1b1EmD39tTnEhEkp4EW1foTBGz3jcTX6LAiyWw/xg2aGL0oA7DuRgIvi
+q6PVEfArghAIP/mv3mZ9EsQpTqPa9PNt0pOeRNhz/xtTIF9tw5lW63BfgcSgtdSeE0eOLEZGqCW0
+q/5ZX7Wuj7XghMKnAxVSw7GTz/PweztRQxzofA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -279,4 +264,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d8b5b1ba-3783-46d0-8652-d066c64c2ee7" Target="#_508f6759-fd9e-4dc1-b987-683df0ef561b"><Timestamp>2020-01-07 11:19:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b37e86e3-cffd-4d1e-ba5d-bf9837827b70" Target="#_bdbb9165-7832-4681-8534-811bf21f22ce"><Timestamp>2020-01-07 11:27:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
