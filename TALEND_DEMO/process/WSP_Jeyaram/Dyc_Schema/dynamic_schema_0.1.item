@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="root"/>
-    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
-    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="sales"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
+    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="sales"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
   </context>
   <context confirmationNeeded="false" name="Prod">
-    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="root"/>
-    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
-    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="prod"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
+    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="prod"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
   </context>
   <context confirmationNeeded="false" name="UAT">
-    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="localhost"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="root"/>
-    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
-    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="3306"/>
-    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_String" value="uat"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" repositoryContextId="_rRqd0BzBEeqU9sXTRDMymg" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
+    <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="uat"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q=="/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -77,7 +77,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/ITS-19/workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Guru/Tools/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -135,17 +135,15 @@
   </parameters>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_kDZgUBzBEeqU9sXTRDMymg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="context.Sales_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Sales_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Sales_Database"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.1.102&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="3306"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;sales&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.Sales_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucvqRPJXuUfz73jLh4szPiF"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;jr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rlnieFzxRGIgJTXfaJNExw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;source&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -255,17 +253,15 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_kDZgUBzBEeqU9sXTRDMymg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
-    <elementParameter field="TEXT" name="HOST" value="context.Sales_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Sales_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Sales_Database"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.1.102&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="3306"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;sales&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="USER" value="context.Sales_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucvqRPJXuUfz73jLh4szPiF"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;jr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="jh3dGM6MdxjpgBow6xatDw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;column_mapping&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -409,17 +405,15 @@
   </node>
   <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="320">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_kDZgUBzBEeqU9sXTRDMymg"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="HOST" value="context.Sales_Server"/>
-    <elementParameter field="TEXT" name="PORT" value="context.Sales_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.Sales_Database"/>
-    <elementParameter field="TEXT" name="USER" value="context.Sales_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucvqRPJXuUfz73jLh4szPiF"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;192.168.1.102&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="3306"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;sales&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;jr&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="rlnieFzxRGIgJTXfaJNExw=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;target&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -529,13 +523,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5f1323d6-72ee-47e9-a2e9-b1e1052bcf09"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ptXia+on3FjQ4TfuK7IoD73vb1jUsrq8a8d3y5cYDvPYzkwpkFbYeXlUiXNTEXmmytnoy0PlOI4g
-jdIRmS86PA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8f75013c-c024-4f1a-a85a-445b7873aa8f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YL7/cNr1pdg/NqlznB5nDT/gcCV/jiKSjKVxmwUXZsZSc9mFcc9Q4sF9RkqXrl9WDF0rYxb+v7MB
-IzHFG66HrA==</DigestValue></Reference></SignedInfo><SignatureValue>V1HOO/61YB+Llhbal8yTRLsCh9CukcHaJXzdr5LoOZ3tHRj1oXUSBzWJ9H5mlPEz78rJx1pzkrzE
-SYCCz6vdFS0ftNHnKHevqwO/RJLqQ7YHMAFM9WgkAoH3Y0bf94t9Ed/vvZTkml0j6Z6UB9fZE/du
-3rpLYiGAO/rADSwPx9jOOxTDM57Q5DfUZh+0kzUtbpPDh4OCGDqLzT0cyVImj6GxpBwwpeR+xFQp
-1/HQQiDXuhBFexAyn59a9t07KaXAtNLBocKlnnfSUxyjwJR07lv6C0HweaK6WUuMI8A8wGs1mOF/
-dTw18NFBHuvbfTsK1PeURcpzvsIWZ6fs6eFsGA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f2e999d1-e7db-4bb0-8a55-e9b7bfb03c73"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R8A4HPKQJfmmfnTMRd4BpciFiZDjS3CxqiJe3jgkcsDM7Ojh3jII5gi15JvT12K83LwTc/aXu145
+/r6kO9wblA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_ab8e59a4-6aad-416b-9a38-e91b06a1c85c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fe0cEE7SDEGj7Y4Prkb5JyVK72XvUOE75147WzYDO60ofyAU1UEZAzz289+2zIrEI4CCFoPd6LH8
+W8zMhlLH0w==</DigestValue></Reference></SignedInfo><SignatureValue>mGG/tyznh1XT8v3UY0PvjWXRKCeQkXRsK8iost7W5KLpZbth+Ex3DT0zEgTBir74mYUXhhiO9luD
+qizh/xMsr2cLgU5HJ7bFRGvutoyEkscPiw6/Tj//fDGU5RmA5atmv5E7kj+wE/5QChDorwQNnGAB
+9wcnNajs7vlzsaJXJs2fgGc4S1S0ZB3V/olz+zvuNFKL764/UStzGSxuCRQt9TOO3LEC2awCwOkR
+7NN0Mx0sSOxMydWFrlk6JkXHM5Pr8a0XKloUe062wYUsJVJ5Bol2iaaG1BhzRQyANB1tXCMIYzVa
+JAChj477csLyJufpB/+KfMDOEmc8Z5b76g14cQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -557,4 +551,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8f75013c-c024-4f1a-a85a-445b7873aa8f" Target="#_5f1323d6-72ee-47e9-a2e9-b1e1052bcf09"><Timestamp>2020-01-08 11:39:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_ab8e59a4-6aad-416b-9a38-e91b06a1c85c" Target="#_f2e999d1-e7db-4bb0-8a55-e9b7bfb03c73"><Timestamp>2020-01-08 11:43:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
