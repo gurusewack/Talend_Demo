@@ -22,10 +22,7 @@
     <module>jobs/process/Loc_Workout/DW_Sales/job_random_data_source_stage_0.1</module>
     <module>jobs/process/Loc_Workout/DW_Sales/Services/exce_rate_api_0.1</module>
     <module>jobs/process/Loc_Workout/example_dynamic_schema_0.1</module>
-    <module>jobs/process/DynamicSchema/additionalfields_0.1</module>
-    <module>jobs/process/DynamicSchema/ds_automated_0.1</module>
-    <module>jobs/process/DynamicSchema/historyload_0.1</module>
-    <module>jobs/process/DynamicSchema/increamentalload_0.1</module>
+    <module>jobs/process/WSP_Jeyaram/Dyc_Schema/dynamic_schema_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
