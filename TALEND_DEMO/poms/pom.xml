@@ -26,6 +26,7 @@
     <module>jobs/process/DynamicSchema/additionalfields_0.1</module>
     <module>jobs/process/DynamicSchema/ds_automated_0.1</module>
     <module>jobs/process/DynamicSchema/historyload_0.1</module>
+    <module>jobs/process/DynamicSchema/increamentalload_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
