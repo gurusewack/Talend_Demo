@@ -59,7 +59,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend-Studio-20181026_1147-V7.1.1/Talend-Studio-20181026_1147-V7.1.1/workspace_01072019/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/Guru/Tools/Talend-Studio-20190620_1446-V7.2.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -117,15 +117,15 @@
   </parameters>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DMInput&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -167,15 +167,15 @@
   </node>
   <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_3"/>
-    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
     <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
-    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="r0M4Avw8nA8="/>
+    <elementParameter field="TEXT" name="USER" value="&quot;talend&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="7s6v49ZcklfgvLhdBCEhjQ=="/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;DMOutput&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -275,14 +275,6 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;//jdbc:mysql://localhost:3306/test&#10;  //String driver = &quot;com.mysql.jdbc.Driver&quot;;&#10;  String url = &quot;jdbc:mysql://localhost:3306/&quot;;&#10;  String username = &quot;root&quot;;&#10;  String password = &quot;root&quot;;&#10;  String dbName= &quot;test&quot;;&#10;//  Class.forName(driver);&#10;  Connection conn = DriverManager.getConnection(&#10;  url+dbName,&#10;  username,&#10;  password);&#10;  System.out.println(&quot;Connected&quot;);&#10;  Statement st = conn.createStatement();&#10;  ResultSet rs = st.executeQuery(&quot;SELECT * FROM dminput&quot;);&#10;  ResultSetMetaData rsmd = rs.getMetaData();&#10;  int NumOfCol = rsmd.getColumnCount();&#10;  for(int i=1;i&lt;=NumOfCol;i++)&#10;  {&#10;  System.out.println(&quot;Name of [&quot;+i+&quot;] Column data type is =&quot;&#10;   +rsmd.getColumnTypeName(i));&#10;  }&#10;  st.close();&#10;  conn.close();&#10; "/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.sql.*;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJava_1"/>
-  </node>
   <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tJavaFlex_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
@@ -331,18 +323,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_86cc6ea1-beae-4f14-ab06-6afc5bac81e0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8zyoSUf9FAMmo+s8LsByhTHLeOuKVMtrxVwz+ynN2HKv5PaFb8GEmfEl7AMZGGSv+MHrtzGsWHjf
-nen7Ugs8Fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b352b865-bf59-4536-9ffb-1eb11647c02f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NzOHrmx3jJjhrfemudIC6mDzZqZ0TUzLdHeUpOkCTZEGKyzaNoa6PYRO2qCbJGmgJ90NLN2q2boY
-uFdA1QGgiw==</DigestValue></Reference></SignedInfo><SignatureValue>kNFm62oaM40t0p37ebD55P958VkEgqqv56s8O1/f7gurymqMWXgLrqpAY8UfYlUxoE3mBqqS2bQ3
-N/ZyUWI/ukprzk/LucZzSI2u7ebYF6Qw/BaNp6YPob0AAkd55wgfovBpYSfNa4Sw+XJul01+uklb
-FevRZx/R5T+pQSeElweoeUlvH89XVTMyavnFXSZApkA84KeiZ/VNK0LGb8RzhOfJsczASJFa2nc9
-5s8jp9CbdMfe1RrT10lyE06QqkggPF0g1OKW0NnxVMaNbev0y6i+V09kGAox4VUJTjYsuuoinnC4
-U5aGXHBr05e4T38fASd6bi+DOPYcjIwDjDw8yg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_671c95cb-e824-4db4-afc5-9dd073d43004"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ea+7xZti4GscJEYOpqk4ejGVnHlMYwEjCucr5GHPlBqzekC09koZmz6MOF5jUCjtgnvJI8LiNQbm
+HrG8v1jLhA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_473a4fbd-4686-4127-a422-ae16428ea890"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HlW0NUEeIOjVb6q92qDuafRiXKaaJ9n32dPrDMUZlJGJv9HB+KVaOEK3DlT/1ZegRbynhz5afM0t
+Y0BxuK4u4g==</DigestValue></Reference></SignedInfo><SignatureValue>W1paNARPzMC84+mtSQD+1aCV0fl2KUdiSb8qmhqZk6WlOb77vUhRUr7upfinZm179dyRBSizTQHY
+gbToP48KRZOBIA12AI5V4rSwlznqqcP0LeL8TZIsJkA2KZWL+dXpmcxIE7o1Vnxva80ozqWA72DB
+ukqxP7mhTxOFDbwJigIG3sJaxTr22Jk8erziSWfibaM5NynnZ1DFT6cJVkLK+QuUqm+NLd2Ppr7F
+84lOrfX0LRcIGtBHfeYaquTOO7YH+bhmtohjJwjD3HhZvEc4Ad/m9FiYw2vDWYSIRl3Z0pEKHKwt
+OzzE/dTPcj/l2gh7PwYUEew5rtS+0VPmN3cJig==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -364,4 +351,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b352b865-bf59-4536-9ffb-1eb11647c02f" Target="#_86cc6ea1-beae-4f14-ab06-6afc5bac81e0"><Timestamp>2020-01-08 11:26:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_473a4fbd-4686-4127-a422-ae16428ea890" Target="#_671c95cb-e824-4db4-afc5-9dd073d43004"><Timestamp>2020-01-08 11:58:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
