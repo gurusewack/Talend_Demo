@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.example.talend_demo</groupId>
     <artifactId>code.Master</artifactId>
-    <version>7.1.1</version>
+    <version>7.2.1</version>
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.talend_demo.job</groupId>
@@ -23,25 +23,35 @@
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TALEND_DEMO</talend.project.name>
-    <talend.product.version>7.1.1.20181026_1147</talend.product.version>
+    <talend.product.version>7.2.1.20190909_1200_patch</talend.product.version>
     <talend.job.finalName>demo_taks_001_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.talend_demo.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.talend_demo.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
     <talend.job.jvmargs>-Xms256M -Xmx1024M -Dfile.encoding=UTF-8 </talend.job.jvmargs>
-    <talend.job.context>Default</talend.job.context>
     <talend.job.stat>true</talend.job.stat>
+    <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
     <talend.job.name>Demo_Taks_001</talend.job.name>
     <talend.job.id>_4g-hgDB6EeqZhqr3XTVthA</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
-    <talend.job.framework></talend.job.framework>
     <talend.job.folder>workout/</talend.job.folder>
+    <talend.job.framework></talend.job.framework>
+    <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
   </properties>
   <dependencies>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>antlr-runtime-3.5.2</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>crypto-utils</artifactId>
+      <version>6.0.0-SNAPSHOT</version>
+    </dependency>
     <dependency>
       <groupId>dom4j</groupId>
       <artifactId>dom4j</artifactId>
@@ -54,13 +64,18 @@
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
+      <artifactId>org.talend.dataquality.parser</artifactId>
+      <version>6.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
       <artifactId>talend_file_enhanced_20070724</artifactId>
       <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.example.talend_demo.code</groupId>
       <artifactId>routines</artifactId>
-      <version>7.1.1</version>
+      <version>7.2.1</version>
     </dependency>
   </dependencies>
   <build>
@@ -106,7 +121,7 @@
           <plugin>
             <groupId>org.talend.ci</groupId>
             <artifactId>signer-maven-plugin</artifactId>
-            <version>${talend.version}</version>
+            <version>${signer.version}</version>
             <executions>
               <execution>
                 <id>sign</id>
