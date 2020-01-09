@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-09T11:47:32.111+0530"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-09T18:14:01.551+0530">
+  <deletedItems id="_uUhc0DH0EeqIeYmzIeiPsA" path="WSP_Jeyaram/Dyc_Schema" type="PROCESS"/>
+</recyclebin:RecycleBin>
