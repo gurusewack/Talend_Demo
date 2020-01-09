@@ -36,7 +36,7 @@
     <talend.job.name>mssql_dynamic_schema</talend.job.name>
     <talend.job.id>_RxGN0DLfEeq4tYJ8996jaw</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>wsp_jeyaram/dyc_schema/</talend.job.folder>
+    <talend.job.folder>loc_workout/dy_schema/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
@@ -133,9 +133,9 @@
       <version>0.31.8</version>
     </dependency>
     <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.12</version>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>mssql-jdbc</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -146,6 +146,11 @@
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.10</version>
+    </dependency>
+    <dependency>
+      <groupId>org.talend.libraries</groupId>
+      <artifactId>talend_DB_mssqlUtil-1.3-20190523</artifactId>
+      <version>6.0.0</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
