@@ -239,7 +239,7 @@
     <elementParameter field="TEXT" name="LABEL" value="Column Name"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaFlex_2">
-      <column comment="" key="false" length="-1" name="columnName" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="columnName" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="448">
@@ -271,7 +271,7 @@
         <mapperTableEntries expression="row4.order " name="order" nullable="true" type="id_Integer"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
-        <mapperTableEntries name="columnName" nullable="true" type="id_Dynamic"/>
+        <mapperTableEntries name="columnName" nullable="true" type="id_String"/>
       </inputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row4" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="row3.columnName " name="old_column_name" nullable="true" operator="=" type="id_String"/>
@@ -549,13 +549,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_728c4f43-91cf-4365-8d8d-9343b58bb022"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>O6ysWF22FhnVmsbYG14aoS1Jlb4bEJVAr9BrdmTUHenP9JQso+XOGHz+Yf+CzKgfHVS9Z+83a0DF
-Hi8QkR4JJw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_be0cdbb7-3262-4eaf-bb80-3ddb374255a5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7mx7tFV3aANGrehg4m5+mxfK7z7BL1OGC5J50bIPIrA4Z3L7Jzjxxih3Zrf9xVjx03HLedYW/Dbf
-vbjKZGU63Q==</DigestValue></Reference></SignedInfo><SignatureValue>LvJuk8yng6Hab/5BPeKpwenysMWoS3lsIyiVlpX+D3fpfOyvUKrVKnJfafLSG1mNufckg42jTB84
-1Mcy7uC8/+6xEhgbrQTYQu8bxeT5iwhfsCvC105van6+16PJ9KOAqb69G5BhJQth+H8qtTOw7TaQ
-s7DooFm4oPIGlz8seE7OrCoxnLpfwwX5ba58fmLWuZyI+k29iYp0p2kdTmJ+PfFZdqRVYYOX6yLf
-6d/18fXMFDLEUEyC9LxNoyQ+vy7uCNgOlaoGShHGdQ1SXx0prtyx1lxdFKY9KdOY0hlk0t2AoaxI
-LwT+S2TP+ATfjUAQ1zrNeKtNfq46wVacK06+pQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b8f17938-5049-4032-b4fb-8eafd6a56705"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>24He20Q3pfadvYMBLpaZsblnMtaMdmafhdcvdjcDi2YGhmkpxkxXaSvClqdTdiz/x0ocg81R3kTa
+PDFTzBNfOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b3ed76de-f5d1-4c98-9268-795acc956cd7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ifV13DILm5cZyssXzHBxcr2irlkzlUAuUiQETPepUBRjkze04UXwjdkqzCi6zoFJHfsy7KDMXYs8
+IA6Exx5EIg==</DigestValue></Reference></SignedInfo><SignatureValue>kljNT9pz/cMSrkVxAl/H1uY4EuKQVetGshYjq/AyRi/IDUufrQ+GgIOp/bUmktjfZuEOJiUNotl2
+yFVgQ5gBTutW027lGT6CBF3Vn2FE/lNIic7kmtWjKYZ5roiZDszhwzMEhUOlkDmLqecJy/i42wrn
+5buY6l7Xas4/lkBRUu4B8VH75b7M7n74n6uG5ixT4LnBiRjac1Q7VqgulRoV1uLItPoibzk2LKJh
+5zlXpx9l6Ij8Uh++IZB1jSd0t0v8yBdonvnY5wxd+US1kFRfMUYC0Sa1hnsruDeRDGNbFTusAQwE
+wO7OVSXFm6DJyvXdaUPwFfw6Hp07Qb1y75lqsA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -577,4 +577,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_be0cdbb7-3262-4eaf-bb80-3ddb374255a5" Target="#_728c4f43-91cf-4365-8d8d-9343b58bb022"><Timestamp>2020-01-09 10:50:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b3ed76de-f5d1-4c98-9268-795acc956cd7" Target="#_b8f17938-5049-4032-b4fb-8eafd6a56705"><Timestamp>2020-01-09 10:51:02</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
