@@ -27,6 +27,7 @@
     <module>jobs/process/DynamicSchema/historyload_0.1</module>
     <module>jobs/process/DynamicSchema/increamentalload_0.1</module>
     <module>jobs/process/WSP_Jeyaram/Dyc_Schema/dynamic_schema_0.1</module>
+    <module>jobs/process/WSP_Jeyaram/Dyc_Schema/mssql_dynamic_schema_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
