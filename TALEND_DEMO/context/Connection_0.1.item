@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
   <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_iMJV4DLdEeq4tYJ8996jaw">
     <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="192.168.1.102" xmi:id="_iMJV4TLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_iMJV4jLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="jr" xmi:id="_iMJV4jLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false" xmi:id="_iMJV4zLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_iMJV5DLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="sales" xmi:id="_iMJV5TLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q==" xmi:id="_iMJV5jLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="0qDAE1k5BLdsrHpPJSN7Gg==" xmi:id="_iMJV5jLdEeq4tYJ8996jaw"/>
   </talendfile:ContextType>
   <talendfile:ContextType confirmationNeeded="false" name="UAT" xmi:id="_iMJV5zLdEeq4tYJ8996jaw">
     <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="192.168.1.102" xmi:id="_iMJV6DLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_iMJV6TLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="jr" xmi:id="_iMJV6TLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false" xmi:id="_iMJV6jLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_iMJV6zLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="uat" xmi:id="_iMJV7DLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q==" xmi:id="_iMJV7TLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="0qDAE1k5BLdsrHpPJSN7Gg==" xmi:id="_iMJV7TLdEeq4tYJ8996jaw"/>
   </talendfile:ContextType>
   <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_iMJV7jLdEeq4tYJ8996jaw">
     <contextParameter comment="" name="Sales_Server" prompt="Sales_Server?" promptNeeded="false" type="id_String" value="192.168.1.102" xmi:id="_iMJV7zLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="root" xmi:id="_iMJV8DLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Login" prompt="Sales_Login?" promptNeeded="false" type="id_String" value="jr" xmi:id="_iMJV8DLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_AdditionalParams" prompt="Sales_AdditionalParams?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false" xmi:id="_iMJV8TLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Port" prompt="Sales_Port?" promptNeeded="false" type="id_String" value="3306" xmi:id="_iMJV8jLdEeq4tYJ8996jaw"/>
     <contextParameter comment="" name="Sales_Database" prompt="Sales_Database?" promptNeeded="false" type="id_String" value="prod" xmi:id="_iMJV8zLdEeq4tYJ8996jaw"/>
-    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="RsXzgl/D8iBMJAxG3hNo9Q==" xmi:id="_iMJV9DLdEeq4tYJ8996jaw"/>
+    <contextParameter comment="" name="Sales_Password" prompt="Sales_Password?" promptNeeded="false" type="id_Password" value="0qDAE1k5BLdsrHpPJSN7Gg==" xmi:id="_iMJV9DLdEeq4tYJ8996jaw"/>
   </talendfile:ContextType>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d4d432de-617c-4243-a7cb-8a2731f0b6f8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JaUjhJM6LND40ugdi9m3TwezUPHLOjOTwCC3htpKamZvkZxpSoxuVn1P3FtsA/hufioKemlFcA0r
-q+tR4FDDIQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_84845613-866e-4039-ad05-b1cc117d8dce"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ucClU7wy3yqkcD1rPGF7TDUuvMoDp9/fiYeAYE7i6/MEJijqO10X8ubaMdVh3+8iVpNE2dAQdx8y
-s8boBYT7sA==</DigestValue></Reference></SignedInfo><SignatureValue>H7hVj9TAp50IpUmdE21pX3Fw9ZomiGTk5M/4JqgrnQRRwBEjVX8U3tVgSIeoNlDuZRFDjedvdgS8
-8wiaaoNgL1X8zcHyFk22WLRfuDPOFWgdxM4OyOn69OgC8y/1Ey6uBd6xIu9FJ6UFOYmNgW6BBLTt
-Eb+TNRPAoq/ZxCMX2ZygrZukbRaIPyv9iUYUNY5kMtqNPuis68sn8z2BeFm+inqs+Jqrh+Tk7grz
-pNtcOjV8g/nfwWVDj7wtONnDEAygSyooeNErbX44vzm1esntnYqduu14r+E18frqSFvMJ7i4y01Q
-+PaQtd3lf0tHyIIuHe6L/nyP+RPi1//+31YKPg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5cfdc63e-fcf0-4b16-bcc5-ed94c2a690d6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>latCBN+8Z9PASa7ji7MTQfH1QkvaX4vZ8Hwa9LYs+Wmh3ww56puPW0qHiRmS/nXOtt8qru0c3zsL
+0X7a9mpSQg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3de19e94-5df9-4816-8477-49fe4a2d6c36"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>64RofqRVdaUm6i166DVtNN72tkJgttICdLzcuh+dLdMF/qNJRxHPI5wwqiKFTbfZLQuY7VjTPlAz
+e5fKm3up5g==</DigestValue></Reference></SignedInfo><SignatureValue>jpDaNDF1Ke+Ri3W5hjLEu7wy1071Lg6t10rggqTrFWRSRE32YIsIJa+Vo8YpKJ8w2wCf55C2YskK
+lmV80ywl0Z26HEuKh8k0CCpUR2A/a4E4n+BxgUD7kEt46HeEFc7XrYGNSuzA+z/rlS+ovtNrB5iH
+lNm65PPGrt52IUNrM1W1gyfWhJ0nFJPgz2bITKdsw8Kv/lavrTxzabklEoQnzNGZetoDE+EgidUG
+rL22km2jhcqluwFcgLo2Ni5vRUIuZRet2Nsu9t9n5CiH8qx04sgRLWQdDh7LV3dmThmloDjwq2Jv
+E+12TL0P7EUOffHJwGp9nKd3h2HDSlz85JFT2g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -51,4 +51,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_84845613-866e-4039-ad05-b1cc117d8dce" Target="#_d4d432de-617c-4243-a7cb-8a2731f0b6f8"><Timestamp>2020-01-09 12:48:48</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3de19e94-5df9-4816-8477-49fe4a2d6c36" Target="#_5cfdc63e-fcf0-4b16-bcc5-ed94c2a690d6"><Timestamp>2020-01-09 12:49:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
