@@ -9,7 +9,7 @@
     <contextParameter comment="" name="MySql_Loc_CNXT_Password" prompt="MySql_Loc_CNXT_Password?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_Password" value="6RnbBvZEv9/EwFGQVDNdPg=="/>
     <contextParameter comment="" name="MySql_Loc_CNXT_Database" prompt="MySql_Loc_CNXT_Database?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="test"/>
     <contextParameter comment="" name="MySql_Loc_CNXT_Login" prompt="MySql_Loc_CNXT_Login?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="root"/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_AdditionalParams" prompt="MySql_Loc_CNXT_AdditionalParams?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="MySql_Loc_CNXT_AdditionalParams" prompt="MySql_Loc_CNXT_AdditionalParams?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="noDatetimeStringSync=false"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -359,13 +359,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9b8cd54-0c74-4739-a6fa-159fe90b8742"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qTcxR2P6D5QSrbJkX+vylJEM2qDpy1HfXKVXBs5C23r+uNOFq+4wu3qvlyYEKhFMidJakHICiBaM
-/m9FKLMg3g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1fba610-da04-465a-8fb2-37e4cfacf151"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>JMMW/MLoz7eh9whpo19DmZmttn8ME7iewj4kwdfu2SAi870nvlseayQtT3FWkQRgBHzII9s2f7eM
-JsPMdiiTUQ==</DigestValue></Reference></SignedInfo><SignatureValue>GMQhkn3+IgcZA2mLoV22nAtWFk8wtt0XWXvt09lN5fzpE8zVbXJjpsV8SyZ1dkFu82HmFKV4WVjS
-qteP4E1Kt/hqWHwjfDdo3pn720QSgp5a3GGNpT+SUCjFJAk8d0M5q8wjAiapxrxyUDVY9GWAANC2
-SqUJfgprtpx8Yb+iv6TeqIqR868qY99cRVtuj4FjMIqDFj4wTI/Dzqw676cuHMLO+/xh6bsmgTJy
-wV5nCt+5n5vlrPWjE2QNQfPcEQ9x8zBpT3eDO/iYXOm+RTZJOnHSaQDmAUOuwSZjOgboBVfZo13u
-Ctr4604m7B8OaJ0djR0SFWJFf1awoGm+Mv4+bQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_26c1759b-d178-49b5-8ffd-b91f2202f6f6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>D+FXUOU3NE24dBWkMGoHyDPAXqGjBVC4FRRonz3wIwXh0uaDpmTCFHOOqS8zKyStzk5dXK63/Z+B
+Rzrfq1jJ+A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7cefb688-aa77-4629-ac4a-015acc1e0cbc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ef59s+WXMkLzu2uml3U2in0miE/V+JqdygMIn5UnomNRRJrzU0w94041ZFxLG67ZAicXhuUfJ+w2
+6ZdDBy/GxA==</DigestValue></Reference></SignedInfo><SignatureValue>Rdkb6VQpK4t4Hftwh+aPOsA36XngevzDwV3Pa3tnYecB3rpXn3evPr5kvgZrxKIl8SrTcJdk8Cxv
+IcGFM/fkt1uDlzVftiapynN/cWNu1sBIwCnHGDZBQfJTqkWhC2zGjCXB3jrlZFw2pXXxP4MIhVGg
+UvReYJGK9zLwKFgR5qhp6jg0CONUB/krwXvGAsWtXEizHWVSALkVww5CR+Argo1k1O3nBj2ZXO+M
+SfQA1Jr9ld4r0/c/DXudwwEcRRPCr/lUUBUmDdKC8pIuptJOUaJ+d/MnjAF314DMK37rq4ZA+xpe
+A9I1+web8/SZUCcuPVzEtR08mjIDPYskTWvB/g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -387,4 +387,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1fba610-da04-465a-8fb2-37e4cfacf151" Target="#_e9b8cd54-0c74-4739-a6fa-159fe90b8742"><Timestamp>2020-01-09 06:27:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7cefb688-aa77-4629-ac4a-015acc1e0cbc" Target="#_26c1759b-d178-49b5-8ffd-b91f2202f6f6"><Timestamp>2020-01-09 06:33:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
