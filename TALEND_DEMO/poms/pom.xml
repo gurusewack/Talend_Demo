@@ -30,6 +30,7 @@
     <module>jobs/process/Loc_Workout/dy_schema/mssql_dynamic_schema_0.1</module>
     <module>jobs/process/Loc_Workout/dy_schema/dyc_master_job_0.1</module>
     <module>jobs/process/Loc_Workout/dy_schema/dyc_sub_job_0.1</module>
+    <module>jobs/process/Loc_Workout/dy_schema/dyc_components_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
