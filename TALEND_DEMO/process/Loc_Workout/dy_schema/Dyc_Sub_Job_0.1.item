@@ -270,7 +270,7 @@
       <column comment="" key="false" length="-1" name="DC" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
     <metadata connector="FLOW" name="Update_Stg_Customer">
-      <column comment="" key="false" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="false" length="10" name="CustomerId" nullable="true" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="DC" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Dynamic" usefulColumn="true"/>
@@ -283,7 +283,7 @@
         <mapperTableEntries expression="row2.DC " name="DC" nullable="true" type="id_Dynamic"/>
       </outputTables>
       <outputTables activateExpressionFilter="true" expressionFilter="row2.CustomerId == row3.CustomerId" name="Update_Stg_Customer" sizeState="INTERMEDIATE">
-        <mapperTableEntries expression="row2.CustomerId " name="CustomerId" type="id_Integer"/>
+        <mapperTableEntries expression="row2.CustomerId " name="CustomerId" nullable="true" type="id_Integer"/>
         <mapperTableEntries expression="row2.DC " name="DC" nullable="true" type="id_Dynamic"/>
       </outputTables>
       <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
@@ -451,13 +451,13 @@
     <elementParameter field="TEXT" name="LABEL" value="Update into Stg_Customer"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_2">
-      <column comment="" key="false" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="DC" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
-      <column comment="" key="false" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+      <column comment="" key="true" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="-1" name="DC" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
@@ -619,13 +619,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_45df7750-7ccc-4799-9308-369ffa2bca1b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LkBrBe3jlYns8JPUcf6nc+ZA933ZylkDZ7GVOnVLsYbY/ajWiacpWtBlUogBRNiy4pTGrIrWj9Iz
-pw7W24jpxw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_db888486-b68e-45cc-9ac8-c22675be8841"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ONtlK1MXurIT4gZugkz4ehAap7lxXNFbpx6q4IxenDNRUxxEUBaNIS1Wvw3fwrkdw7VF5tpYR0q0
-JUPsI3QjwA==</DigestValue></Reference></SignedInfo><SignatureValue>EUvmpEv/kbvRAHS0dqoxEvYXwJrKyFuARBYV6ZeNmelnXdWbAsQQDxb05vsJOQpGqamc2Ta0xMqJ
-WIimg8gl3nazZqRRizhLMys5v7eHZMlEZ8PrR1SK+opMBFqK1Ti0vMLuuuBeuJK97Vc44Tx252Dz
-Ig7H2Q4FD/MJWT+ATMdVzwS/S+g6i9+rPL7stfOnWlPdZA+aHV4ksaNYp/MOLjpDlDp+0weTlavI
-t6oC/wuEa+L+7P5PsQCpoV84FrtuHpF4dFv396uxP9gPVoZO//T1qIvsehAjTOGmP1/ndV9oX7LX
-tz5cMJ5P4Fg3GfJ5SveiVxSG6LMxtBDSoK3HUQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3dce1d1c-38aa-43e6-8c62-f69f075e0981"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>MOJVpjnXN7zMVjXUQFTJgGzrpdA3/MqOqpl0p5LGYIHJ82X9AlWpt9gkyYIEqngmra1tjdHfJuxi
+1NbOcurDtQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_4b9396e2-b6d1-4853-8b50-24420116c0eb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iKcQjNe56vkfNHD457WeoDwObRn6c9DwB+J9fksI9IroWwCRypSFwQ3QMbWXvOtcP+MtONbVLOy9
+iDc01rqrEw==</DigestValue></Reference></SignedInfo><SignatureValue>PyRtxx45HIhqyYkY2aFVXYL0hPjC4CbGES7HJQkikztmkurY7gyGxzxFMUQ68/AmxqXTf/l8v6vA
+RgmQaKpcld/HkahO95yK4ElLKA9ow84s+X+svxiEhfsk9WAfKlRByLZfW7VG5f9cTO3ws/ggSNFy
+w2bxGN6l+dHlqNMaG1LobfoQ88b1Y57KOCOz6lbjVXhI1uAZqpTzINbTZLl++lA3XaZrncSCXVWG
+sTU4gbo4c7y396u6BKM0j+mMUJtCgmhDkjMXq6ixjGbhcjUY1suf7Q9WObs9/6oDkdHSjZ/IyJjC
+0sU/0bFBHHWtg0luiONl66rgJ5L/NezxArr9Cw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -647,4 +647,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_db888486-b68e-45cc-9ac8-c22675be8841" Target="#_45df7750-7ccc-4799-9308-369ffa2bca1b"><Timestamp>2020-01-10 14:57:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_4b9396e2-b6d1-4853-8b50-24420116c0eb" Target="#_3dce1d1c-38aa-43e6-8c62-f69f075e0981"><Timestamp>2020-01-10 15:00:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
