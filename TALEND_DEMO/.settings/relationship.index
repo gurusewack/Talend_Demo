@@ -503,6 +503,10 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "TALEND_DEMO:_Uwl6ADN9EeqPCI7lX7wucQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
