@@ -194,13 +194,8 @@
   </node>
   <node componentName="tExtractDynamicFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="704" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tExtractDynamicFields_1"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" show="false" value="_JB6owCVNEeqM0JfO1RV0Sw - Customers"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Customers" name="tExtractDynamicFields_1">
-      <column comment="" key="true" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="250" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -223,12 +218,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="Zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CreatedDt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="UpdatedDt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -247,8 +236,6 @@
     <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
     <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="CustomerId"/>
-      <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
@@ -265,18 +252,11 @@
       <elementValue elementRef="LENGTH" value="10"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="Zip"/>
       <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedDt"/>
-      <elementValue elementRef="LENGTH" value="10"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedDt"/>
-      <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="Customers" name="tLogRow_2">
-      <column comment="" key="true" length="10" name="CustomerId" nullable="false" pattern="" precision="0" sourceType="INT IDENTITY" type="id_Integer" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
       <column comment="" key="false" length="250" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
@@ -299,12 +279,6 @@
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="50" name="Zip" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="CreatedDt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
-        <additionalField key="Comment" value=""/>
-      </column>
-      <column comment="" key="false" length="23" name="UpdatedDt" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
@@ -335,13 +309,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_61560151-ec47-4ba4-97d1-e463f2022acc"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>fRpilF0wRdTksP/3RujXVGdfVxFIBNLAya1HFhrsYk9rw66mmWzIfnaSuPUEwSYu2dPofo5d7Th1
-vGuJ4kLzCQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_457da299-6f62-42e5-b1f8-0432f5d66710"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UEiAVfWIGR2UUw1FybZ2qJvlbHKAEmBUXY2eR2/gEK3YrnVuzuL5zBP3zLvGIlh5Onk0mWqhWXxi
-Vwam/kIRZQ==</DigestValue></Reference></SignedInfo><SignatureValue>ly4SpFrS14M4f3B6usmmJIHwi7UYHhrLpIBn7tI7ddm0DPrsxeXdnerfWerwutR6FeA66k2dXNbW
-+IvLlVetxpFF7m/Cqw2ff1a4w+J6WWbU7xkLf4BJy5heUK3Y/4f0ipiHIj33jdzah6oZlKrCARBk
-7b84kDy4YKklZkVJ920ZKqHuXTlwK8jgKcyU0DBFzc80pxvM7+LPYEt2Sup/P2JopFAf6/Z2AsIT
-HW9Wyfp7Z9ii6uRwWIDgzdKRvONfsOoKBVwSDUZI0/OPp932VWe6f5xYNmv70FuYZp6tothn/lLm
-LHbTIzcpfxDSa4t7lLEJdYTLivQpMnSmt1zRKA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b5491dfd-48d2-431a-81b2-81ba96ab7429"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>vmoAZrKq6qZXF9uiq5iOYL7LScLl11iRor8gTcsLix+5N9LRy1yTnTcxAHgzV3o4E0904JlYzQMB
+lWHNK/hEGw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_39e922bb-fd23-4900-8dff-3dd752f3718e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7xAi8Hx0Uf9xuJo1D2FIiUytRWR2+3xGNlb660y3qjfLzMt3bdkAGiYWL64Ip9nUJnZkMGgUk/4P
+OwzpdXxsHw==</DigestValue></Reference></SignedInfo><SignatureValue>XCNsqQjI1e6D3dpxET/XJNr/xLv9fCCHllA+SOnrYfDl+XjmK+m7cSDhj6tI4/NzUhHBHK8X/egf
+UV4AEKtALlfr45TG0FeHRGQ2Re7sGuyIP1QSjPKLmlfV7M+YAkxBPmW8zh4oBTBny7CneZ7AMlZZ
+2sct5896mSUJPNx2y+Fo16Euj3+2vttQjSCP3NZLVdJfj+YRJ2oPM0ihGMxIKX96nof/qvzuZmMI
+RFb5hMTcR4APnSw/Mi1FvEH3GoA/Fjfc0ahgL8Qmv5WlxXgx4Wfcs5iD7AdXuLFUgR3k/VQQ21e6
+5R1ntNzePTzBoxY3i15X0LKc+e9+X0lJI8wq1g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -363,4 +337,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_457da299-6f62-42e5-b1f8-0432f5d66710" Target="#_61560151-ec47-4ba4-97d1-e463f2022acc"><Timestamp>2020-01-10 10:56:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_39e922bb-fd23-4900-8dff-3dd752f3718e" Target="#_b5491dfd-48d2-431a-81b2-81ba96ab7429"><Timestamp>2020-01-10 11:15:30</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
