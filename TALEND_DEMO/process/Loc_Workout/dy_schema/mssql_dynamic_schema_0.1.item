@@ -165,7 +165,11 @@
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dynamicColumns"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBInput_1">
       <column comment="" key="false" length="-1" name="dynamicColumns" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
@@ -338,6 +342,7 @@
   </node>
   <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="9" offsetLabelY="-46" posX="256" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
     <elementParameter field="RADIO" name="USE_SINGLEMODE" value="false"/>
     <elementParameter field="TABLE" name="VALUES" show="false">
@@ -429,7 +434,7 @@
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
     <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" value="false"/>
-    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value=""/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="dynamicColumns"/>
     <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
     <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
@@ -443,12 +448,19 @@
     <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
     <elementParameter field="TABLE" name="ADD_COLS"/>
     <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
-    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dynamicColumns"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
     <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
     <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
     <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
     <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
     <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tDBOutput_1">
       <column comment="" key="false" length="-1" name="dynamicColumns" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Dynamic" usefulColumn="true"/>
     </metadata>
@@ -727,6 +739,7 @@
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
   </connection>
   <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tJavaFlex_4">
@@ -741,14 +754,14 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
   </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileInputPositional_1">
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
+  </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tSetDynamicSchema_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
-  </connection>
-  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileInputPositional_1">
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk4"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tFileInputPositional_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputPositional_1" target="tFileOutputPositional_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -798,13 +811,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b0146961-9098-421a-b1d2-c18a32ed0b8f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>PI2S9n9eLwmjEyBgsBOYRc8z88o8v1BB5aL1LboYOJLqvD151LVvPPcru2i0U5wssKCnkE4vmEQG
-ednBTMzMWQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cbe49f73-62cb-40c7-83d4-ea77d0df0098"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/d+SafXFMsFLCgWxevmzad9nxJuH3U4uowa8V4+XxzalFNk983/P1OpxW4V3QLvph5Cg/N4Xjs8i
-r/L9yhv/0A==</DigestValue></Reference></SignedInfo><SignatureValue>TRgUYDC6awQhKXtADyx6kO8kXoJMjN3GlP1nm75WPRJp1beRcUIgx1q1i4xTgsAnnjJ16A4fvxbR
-lt4+R5SPHsBg2QuT+HFnmGi5xh1e9Yd2+AWEsiGp+ww1q2GqspPvdvdboA88LeilNXr/6LQjwy8p
-tKerSs4L5gbRKWHZgcbhXZM2KMn7sWd21sQ+46DvQSBBZXpbSr1AUIo72Z9YS+aRI70IQO0rsEaf
-7ynFnOUxovX8412BkyY8WqvIIN748WM4MjlFtLzqNNuq8+DAbbGgq8deNCj4fauOQJlMGwd+nxfw
-4Op2Lz4ng6DffqBrhjYaJP7XUJKhEWViLW5Qvw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_09504fd6-7718-4dfd-92a7-db408dd46ca2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9VwPPUTd0H283lFb/zV+xgyGnk+L2KNVwi4UVpxedB1EIaxPxOtGkw39xLtjoK3wYF+/GVhVMVNC
+35bDA+GlJg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_e941d62c-8ca3-4939-9590-924db6755954"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LO1ODNbHM5rYiF2q95gCAjLCcurNereglHPDO71r9almpBFYj9LxTz2yA72TRwL/kJqq3lQeDMak
+V8jBkQ5SrQ==</DigestValue></Reference></SignedInfo><SignatureValue>JnZqmYvy+f/OYOEmP16t+xqMN+biV6D07KTgYIF/babs6QUzxnffVo2V9QHe+rAp5UZNPy1qbkSL
+P1jCqRgEygTzmlNCtM9NRpg3N4MoC4CU/rlTn+HSzl5gyPNCn9p8QJlQrK1FIhRQ8EuNmJlZEusq
+aLneP5Tebc+ZQ2yfoh0vm3Y936RdYAOsHTfKrxsjqVU/XKgkc/Wd78IB/mQyvK4xsB96NiWNOMC+
+wcM+Cl6hmTy2PRypFW+jRuXr10waeKQLkGg/RL8W+2LVeFLip1qw9IYVByvbPn36I9bKzqf9C0lM
+Ye6JLII4CfAZyBLV+Xil4UFkzL9/6mjid7WbQw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -826,4 +839,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cbe49f73-62cb-40c7-83d4-ea77d0df0098" Target="#_b0146961-9098-421a-b1d2-c18a32ed0b8f"><Timestamp>2020-01-09 13:08:59</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_e941d62c-8ca3-4939-9590-924db6755954" Target="#_09504fd6-7718-4dfd-92a7-db408dd46ca2"><Timestamp>2020-01-10 04:28:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
