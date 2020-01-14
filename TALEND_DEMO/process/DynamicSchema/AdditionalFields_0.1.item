@@ -3,12 +3,12 @@
     <contextParameter comment="" name="sourcefields" prompt="sourcefields?" promptNeeded="false" type="id_String" value="[id, name, age, dob]"/>
     <contextParameter comment="" name="targetfields" prompt="targetfields?" promptNeeded="false" type="id_String" value="[id, name]"/>
     <contextParameter comment="" name="targetfield" prompt="targetfield?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_Server" prompt="MySql_Loc_CNXT_Server?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="ec2-3-92-108-194.compute-1.amazonaws.com"/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_Port" prompt="MySql_Loc_CNXT_Port?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="3306"/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_Password" prompt="MySql_Loc_CNXT_Password?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_Password" value="YdTnhbqBAdo="/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_Database" prompt="MySql_Loc_CNXT_Database?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="test"/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_Login" prompt="MySql_Loc_CNXT_Login?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="talend"/>
-    <contextParameter comment="" name="MySql_Loc_CNXT_AdditionalParams" prompt="MySql_Loc_CNXT_AdditionalParams?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_Server" prompt="MySql_Aws_CNXT_Server?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="ec2-3-92-108-194.compute-1.amazonaws.com"/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_Port" prompt="MySql_Aws_CNXT_Port?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_Password" prompt="MySql_Aws_CNXT_Password?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_Password" value="YdTnhbqBAdo="/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_Database" prompt="MySql_Aws_CNXT_Database?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="test"/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_Login" prompt="MySql_Aws_CNXT_Login?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="talend"/>
+    <contextParameter comment="" name="MySql_Aws_CNXT_AdditionalParams" prompt="MySql_Aws_CNXT_AdditionalParams?" promptNeeded="false" repositoryContextId="_67qMIDKnEeqFW_ZH09n24A" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=false"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -559,13 +559,13 @@
     <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
     <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_vGbqkDKnEeqFW_ZH09n24A"/>
     <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_8"/>
-    <elementParameter field="TEXT" name="HOST" value="context.MySql_Loc_CNXT_Server"/>
+    <elementParameter field="TEXT" name="HOST" value="context.MySql_Aws_CNXT_Server"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
-    <elementParameter field="TEXT" name="PORT" value="context.MySql_Loc_CNXT_Port"/>
-    <elementParameter field="TEXT" name="DBNAME" value="context.MySql_Loc_CNXT_Database"/>
-    <elementParameter field="TEXT" name="PROPERTIES" value="context.MySql_Loc_CNXT_AdditionalParams"/>
-    <elementParameter field="TEXT" name="USER" value="context.MySql_Loc_CNXT_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kucOHsgVYCdypsoRnyv4srlUzKg8q3XwX/c="/>
+    <elementParameter field="TEXT" name="PORT" value="context.MySql_Aws_CNXT_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.MySql_Aws_CNXT_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.MySql_Aws_CNXT_AdditionalParams"/>
+    <elementParameter field="TEXT" name="USER" value="context.MySql_Aws_CNXT_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueyQHSUxfApTZK+bTfMrpKCgwz44b1mHZ4="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -680,13 +680,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_26c23d87-8f2c-42a4-9fc3-1dbe72d9eec5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Kgcj9iUEMxJd/7+msRaBzlTgDr87RAnDYbj2ZpLNOlehqNdrPxZwFoSH1cYkJBDLtw0b1lQq/Iqn
-WSA9yHkZPw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1c78a404-47f2-45e1-a861-5beef22af0f9"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>z/e79R6T4fZ5r6kffVsivLohOz3gHNSiRuM5LYw8ocYBzr+R++pIxN3PGWIqdi0UoTnARfP7TfEB
-UNenTf6zVg==</DigestValue></Reference></SignedInfo><SignatureValue>RQRr3Xq2UU4bTe0wxL0qSJxEWELVYOnd1PBW9oKmDt7ab1Uk3mX2s5SFDxF5UmxLtdaX/Kc/AiS5
-dumvq/QR+CYlkBdGE8SgftBOX6AGC/hKC7tmqfwTkMmxXfEaHKgcqISYplCzjUI/nTo6uRrUheHR
-9mFT3AD7NHaKi8luQGXXBlafEtScTUGJ8znb0f7jGKxKjk3+HgF28smv+WOKdzSYEJe8ig56j6pL
-xsgTlAYcCEMYiMBJQh7l+OnNmRbenuTQme+u51ilyCFFwfYRzyBv5J3HJIUp9DB6m+9D7E/kN1gJ
-u0x/Trc00mp55xWX6eUZKLLiUeBQYpFuWvOq2Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9ed8a22f-c00b-4d31-bb51-9fdc60161f6a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YfXhr7ESDxqRGpL+jNvjnuIuFLyhTMZwao8KbmNMSBurE3H6gEJnNIh8c216jpQBiopQUBg16wV0
+JE7Doy6Omw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3914bbad-46d8-41f7-9725-e83f3e931081"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>WoNoM4VSPHrxS78RGch95VXCRIi/g37qfUvjmqXO6hyZWEqa4QpLjZJC8QD9wMarSrAc7K9rs9Qp
+2qPsXcTLyA==</DigestValue></Reference></SignedInfo><SignatureValue>Pc1/z6ZtDXd4ZF44c8ce52H+UPGl1xcogHJqZkRH1nxsQ4jzORcocKj6brnLJWYTqjge1eggGN8m
+HlhBICtKoNTslmDax6J84Qr1xbAfuVz1jNB25ayAs3dQbyGiCo4zIh27wkolL/4ejqZR+zS7KsC1
+BbT7hDbcRFTo0IZjcGI6eWRD6ebJOpO3cen5f2Twr5KJvF3nQRXyf31k4PrIbJjncYf2kwuZagZo
+P5YuC9Waj4ecWp4hNKl+X8/CusUxyCXv2oG4qdnDCK07dQzOQW+jeIWMPd/C7fGSYotOax5XZTOM
+vaAyCGhPjPWLzOiRf0p9eL2+K3Ry6D5Fxv4wag==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -708,4 +708,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1c78a404-47f2-45e1-a861-5beef22af0f9" Target="#_26c23d87-8f2c-42a4-9fc3-1dbe72d9eec5"><Timestamp>2020-01-14 06:49:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3914bbad-46d8-41f7-9725-e83f3e931081" Target="#_9ed8a22f-c00b-4d31-bb51-9fdc60161f6a"><Timestamp>2020-01-14 06:51:28</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
