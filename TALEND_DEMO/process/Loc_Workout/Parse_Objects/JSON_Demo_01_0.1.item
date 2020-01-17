@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default"/>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -107,13 +109,86 @@
     <routinesParameter id="_C3Um0DEWEeqjWf_haVxckw" name="TalendStringUtil"/>
     <routinesParameter id="_C3Lc4DEWEeqjWf_haVxckw" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dcbfaff8-4119-4225-8ad5-32948ba5a4b2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YhlKSevQaXqy5ijXc9M46tD4QU4ShkMdvUm+sFBKTXx/3NA9CsH9oO4r9JJpUIsjrdABE42RcXXz
-q7sYYJxXSw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f7253ae8-b2db-4031-a76b-caa74754328f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Bz888wRcoCgKFyS5rlzspf5GstwSXx1vB735O0xVOdQ1q2IWVssjT4fqJFQYHyBCmsHUbex2f++I
-J6pOJLjT9Q==</DigestValue></Reference></SignedInfo><SignatureValue>FQkvjPEeDkcDxob7ng1/RvYOnwAzNruenZCMTG4PnlG7ZNcADjcBYX0cNFRw0DLt49fLhHbTyc/+
-kcMVuZnFlPzbPeV+45lV8RnqTJEcUKbKcx58t3IuiA//7uwGmz1KrTcttem6mGFad0n21aLVHkxZ
-Fo0FSu7Tjqbx6iSchAqWd9+Fs78iKx8aX8PhusmPL5VF+WfIHGO+3HGx0eDR2T28TqN2AGTgQps9
-upHbRCiuJ0Hij+AV0ZGwbdm/48CLX4EUD7MXXep7yENRODvVxNIvobPTxWiVGW0vrVAHPGTWhleP
-E7FqhNumbW4GZfSSB4DpWIczyewpyfs86pKTYQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_1"/>
+    <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
+    <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
+    <elementParameter field="CHECK" name="USEURL" value="true"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;https://rebuildingireland.ie/news/minister-murphy-publishes-social-housing-construction-status-report-for-q3-2019/&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" show="false" value="&quot;C:/Users/Guru/Tools/Talend-Studio-20190620_1446-V7.2.1/workspace/JSON_File.txt&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" show="false" value="&quot;/bills/bill/line&quot;"/>
+    <elementParameter field="TEXT" name="JSON_LOOP_QUERY" value="&quot;$.bills.bill.line[*]&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPING_JSONPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPINGXPATH" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_LOOP_AS_ROOT" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputJSON_1">
+      <column comment="" key="false" length="-1" name="No_" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="No_" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_1"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="No_"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="" key="false" length="-1" name="No_" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputJSON_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputJSON_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputJSON_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7363cefd-cb02-4d0d-ab36-258a5e6411b2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kSVwjuZf01ao/EVAz73nlkXWK46ij3TSoz116VLU5kjn+/0FmX7CNPdHkNlg7LrU+CRyu0bbW2/1
+qNpaPk90rQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_222bca9d-830d-422e-b7bf-70404beec535"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IBgfHayHfIPX3XPpcRaaPPjaPIFkyyzDN/pY05dC2/97EwinnPeaGx4Iw6LdINM/qOKl8WAQIm/a
+UuTcJqz0Zg==</DigestValue></Reference></SignedInfo><SignatureValue>eoAjKuL0gj5ci7n6qu6SPAy6BW/FXv4Ze5r2nQkZPAdW/UHWghSailmR+f3hICdPyvTPxiXbYxkn
+Uv6OPNa4ocyc7TcuCJ1Mom5cszi80qSjDZrysnsr1pGpKA2khqLoIW0UOy25BIecRZc6btKuiBpE
+QtrGk0XUIc0ttQo7/SqeUNjUnnaKcD/01oWSdB3zvNxQe+fOWErR6o2mtCfEkH/AhEoc8LWp6rHg
+KYhyzop7kPSR6zV15JkJPApvVMqfkwHOmSbCbavSVuZmfCpMSFyDwpZPOsUaGb5MS/1kD4ZRRFpe
+A9FAmsny3Il62oLfZk7WQeaSlTsdW+DgluSueg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -135,4 +210,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f7253ae8-b2db-4031-a76b-caa74754328f" Target="#_dcbfaff8-4119-4225-8ad5-32948ba5a4b2"><Timestamp>2020-01-17 02:05:22</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_222bca9d-830d-422e-b7bf-70404beec535" Target="#_7363cefd-cb02-4d0d-ab36-258a5e6411b2"><Timestamp>2020-01-17 02:47:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
