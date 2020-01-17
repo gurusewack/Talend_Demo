@@ -33,6 +33,7 @@
     <module>jobs/process/Loc_Workout/dy_schema/dyc_components_0.1</module>
     <module>jobs/process/Snowflake_Demo/demo_cnx_job_0.1</module>
     <module>jobs/process/salesforce/sfdc_task01_0.1</module>
+    <module>jobs/process/Loc_Workout/Parse_Objects/json_demo_01_0.1</module>
   </modules>
   <properties>
     <signer.version>7.2.1</signer.version>
