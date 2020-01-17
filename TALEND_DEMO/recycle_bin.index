@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-09T18:14:11.602+0530"/>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2020-01-17T14:55:49.440+0530">
+  <deletedFolders>process/Snowflake_Demo/TASK</deletedFolders>
+</recyclebin:RecycleBin>
