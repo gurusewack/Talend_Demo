@@ -244,9 +244,9 @@
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustomerName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LabelState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RegTime" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Fresh" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Frozen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RegTime" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fresh" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Frozen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" multiLoops="true" name="XML_Cust_Data">
@@ -276,9 +276,9 @@
         <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/@id]" incomingConnections="//@node.3/@nodeData/@connections.1" name="Id" pattern="" type="id_Integer" xpath="Customers/Id"/>
         <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/CustomerName]" incomingConnections="//@node.3/@nodeData/@connections.2" name="CustomerName" pattern="" type="id_String" xpath="Customers/CustomerName"/>
         <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/LabelState]" incomingConnections="//@node.3/@nodeData/@connections.4" name="LabelState" pattern="" type="id_String" xpath="Customers/LabelState"/>
-        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/RegTime]" incomingConnections="//@node.3/@nodeData/@connections.5" name="RegTime" pattern="" type="id_String" xpath="Customers/RegTime"/>
-        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/Fresh]" incomingConnections="//@node.3/@nodeData/@connections.6" name="Fresh" pattern="" type="id_String" xpath="Customers/Fresh"/>
-        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/Frozen]" incomingConnections="//@node.3/@nodeData/@connections.7" name="Frozen" pattern="" type="id_String" xpath="Customers/Frozen"/>
+        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/RegTime]" incomingConnections="//@node.3/@nodeData/@connections.5" name="RegTime" pattern="" type="id_Date" xpath="Customers/RegTime"/>
+        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/Fresh]" incomingConnections="//@node.3/@nodeData/@connections.6" name="Fresh" pattern="" type="id_Float" xpath="Customers/Fresh"/>
+        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/Frozen]" incomingConnections="//@node.3/@nodeData/@connections.7" name="Frozen" pattern="" type="id_Float" xpath="Customers/Frozen"/>
         <inputLoopNodesTables inputloopnodes="//@node.3/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.1"/>
       </outputTrees>
       <varTables minimized="true" name="Var"/>
@@ -355,9 +355,9 @@
       <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="CustomerName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="LabelState" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RegTime" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Fresh" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Frozen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RegTime" nullable="true" originalLength="-1" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fresh" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Frozen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Float" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
@@ -492,13 +492,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_926c3161-5a18-4937-9d08-94a919ca3ec5"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ar0zSNQur7Jo+2XNudvTPmI4xiBgNrxuLU300U/xXve9lr34ENBz58z6s5W0RsGIXWurGZoyhRMb
-DJOm50HPhQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8c765de5-8b10-4121-ac31-cf9844c9d7fb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3LyEi697Id7n/JguSazi4LSkaE0lxn0odmsqBfnSTZ//4sj0cb2Z4xCCvQcyWbPT99ir9qMZqUkq
-i1ksBPtBow==</DigestValue></Reference></SignedInfo><SignatureValue>iHZibAY6GwQ4ZG4tQE8CxUyrUE2Sih4Q5iVu40JFdOE0x2mYJBYMODrYA78AjbyMHuIUEiyxZYaE
-3eocu78znSbBKVKYFICHc8eBbxCnoG+9Dv9UewUIUaQ4KVhnV5Ub69VrXg4jBIAJ0PhkxGKyPPSt
-wRlesdXgtohDu2k/gL88zdm3uNQbqZ/UdOP5iAmnJ4+MUgdyk6vlD9hyhai2uduVPljtvHO0BYSV
-ZoIiHvkclWzEwWUmu5G1M3vVMLucRmX0xPvc0eN0BvWuaczW6W7j5dbK8zClJpin019IfLZx6SUW
-VvRqW+NPKMzRnrbTGIc6Dw5AW/ANnTT898hZEw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_efef02da-dad3-4e56-be2d-0388e6759d15"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wotzmGeqSfeCPk7WNbp/JkA4+D4AqlKgseHfsKB86Hn1lCEtWQtexCKABZX8vpWW4Z21jm02/miu
+OIbNHdDWqg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_acca4989-0702-477b-b8f5-2b1913fa8081"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X6yz+yQ5jgmr4siHcWiEX32w3nh0i2wBO3cqdoGmM+AVptuTsk4aD2FALx3xO+skiL14uZZqvRZC
+zrjTE0JB3g==</DigestValue></Reference></SignedInfo><SignatureValue>JNJaVI6QSRGpbE91wcMBBLjFkgrU9Hb6g27pglc6duuRLVncvEagC4i7iTvdS+IZDWOYiq/qRwwz
+iCQBGivgeBPGOvRxr1F0Aj/2vuuLFB4fuBmJBTsBNz45bAehdIttoFUOMEFBp/swMJ+4Qlhuy+sd
+qWqc1EMlXyRxFXM/tqbE5CZqQcudaKCTiiyHmyZpPlqiqI0nS24J8JKFMh1eo0f0if79vTj+QKzl
+rsNk5VFmxrOHaUe2YVYKV9ASAcSVZwrrTba6nZdydBpEkWR1CJXqUMtp3rv32B47M7jxOux6Z/Zg
+BWtEKJkJL23GxLD9pcG5wz7BDVOVlxVKyHZ2Bw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -520,4 +520,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8c765de5-8b10-4121-ac31-cf9844c9d7fb" Target="#_926c3161-5a18-4937-9d08-94a919ca3ec5"><Timestamp>2020-01-18 09:42:43</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_acca4989-0702-477b-b8f5-2b1913fa8081" Target="#_efef02da-dad3-4e56-be2d-0388e6759d15"><Timestamp>2020-01-18 09:44:45</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
