@@ -197,13 +197,12 @@
   </node>
   <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Guru/Tools/Data/customerWithAdresses.xml&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/Customers&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
       <elementValue elementRef="SCHEMA_COLUMN" value="Customers"/>
       <elementValue elementRef="QUERY" value="&quot;.&quot;"/>
-      <elementValue elementRef="NODECHECK" value="true"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
     </elementParameter>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
@@ -233,7 +232,6 @@
   </node>
   <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
@@ -251,15 +249,15 @@
       <column comment="" key="false" length="-1" name="Frozen" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="XML_Cust_Data">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" multiLoops="true" name="XML_Cust_Data">
         <nodes expression="" name="Customers" type="id_Document" xpath="XML_Cust_Data/Customers">
           <children main="true" name="Customers" type="id_String" xpath="XML_Cust_Data.Customers:/Customers">
             <children name="xsi:noNamespaceSchemaLocation" nodeType="ATTRIBUT" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/@xsi:noNamespaceSchemaLocation"/>
-            <children loop="true" main="true" name="Customer" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer">
+            <children main="true" name="Customer" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer">
               <children name="id" nodeType="ATTRIBUT" outgoingConnections="//@node.3/@nodeData/@connections.0 //@node.3/@nodeData/@connections.1" type="id_Integer" xpath="XML_Cust_Data.Customers:/Customers/Customer/@id"/>
-              <children name="CustomerName" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerName"/>
-              <children name="CustomerAdresses" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerAdresses">
-                <children name="CustomerAddress" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerAdresses/CustomerAddress"/>
+              <children loop="true" main="true" name="CustomerName" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerName"/>
+              <children main="true" name="CustomerAdresses" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerAdresses">
+                <children loop="true" main="true" name="CustomerAddress" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/CustomerAdresses/CustomerAddress"/>
               </children>
               <children name="LabelState" outgoingConnections="//@node.3/@nodeData/@connections.4" type="id_String" xpath="XML_Cust_Data.Customers:/Customers/Customer/LabelState"/>
               <children name="RegTime" outgoingConnections="//@node.3/@nodeData/@connections.5" pattern="&quot;dd-MM-yyyy&quot;" type="id_Date" xpath="XML_Cust_Data.Customers:/Customers/Customer/RegTime"/>
@@ -270,7 +268,7 @@
         </nodes>
       </inputTrees>
       <outputTrees name="Address">
-        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/@id]" incomingConnections="//@node.3/@nodeData/@connections.0" name="Id" pattern="" type="id_String" xpath="Address/Id"/>
+        <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/@id] " incomingConnections="//@node.3/@nodeData/@connections.0" name="Id" pattern="" type="id_String" xpath="Address/Id"/>
         <nodes expression="[XML_Cust_Data.Customers:/Customers/Customer/CustomerAdresses/CustomerAddress]" incomingConnections="//@node.3/@nodeData/@connections.3" name="CustomerAddress" pattern="" type="id_String" xpath="Address/CustomerAddress"/>
       </outputTrees>
       <outputTrees name="Customers">
@@ -294,7 +292,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_3"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -323,7 +320,6 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_2"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -364,6 +360,7 @@
   </node>
   <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputXML_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Guru/Tools/Data/products.xml&quot;"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/products/product&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
@@ -414,6 +411,7 @@
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="64">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
     <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -458,21 +456,19 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="XML_Cust_Data"/>
   </connection>
   <connection connectorName="FLOW" label="Address" lineStyle="0" metaname="Address" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_1" target="tLogRow_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Address"/>
   </connection>
   <connection connectorName="FLOW" label="Customers" lineStyle="0" metaname="Customers" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_1" target="tLogRow_2">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Customers"/>
   </connection>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_3" offsetLabelX="0" offsetLabelY="0" source="tFileInputXML_3" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
   </connection>
   <subjob>
@@ -494,13 +490,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e9fb68e1-97c2-41ef-b7f1-ed51812316ae"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mvPtWzqHkgAK5QYO8hDb0K/SOzw6USGA0aZu/XVx6KryM/Uw2Qu1yGE7rTK7VwQL4dekJv4VQUvO
-ugUJf6FRbA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2fc20b15-00c7-4ff0-b04d-ff894c542fa4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>P1PrsQhwgZum+hxZaEq/Cwk8w4ZDw8euvQ1TyEbgOdqaD/BQykqNJDNvbUki2GtZToWTOkp1XUPA
-CgaPwj5Vng==</DigestValue></Reference></SignedInfo><SignatureValue>nwSZzi9yDGrJeGxqZ9a5wx6KhdztBd0KXkTHG8r9U5WTR3AZwQ4ZJ28GEmT24fx78hI2bJlC6Hlq
-jRPhK+L3bUKqx0JP4CTWVHpkthqzN9kHBUdOfLYvxD4xXVNSR7cdS/nVfYz1a6EKYo1lQI5m9Gr8
-0SGVy1YC39JCWpq28tMEfDGYKm8nFSSa8aKXA15m7ghX2vjMAL+1v+GeqvmzP9mnhWGj8KxJ0OMe
-8yqpbhIcq1sSqBl5b/qdDKTg3Y64d7NYbzcLu5ZCgatwr3xi20nbncbBYoO9oCVGpAPNa1S4dVTE
-HFuGbgXm1Asx4f0noeF9Z4D6sinP0QLE1LuAsg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9421f132-7221-4cd6-92ec-251ab48b92ff"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q1XEjLQ1TyK3/o8omLBZRqEtrfxMM9d7HJgouYh2jkcYqpNkwAQAz2WdRj/pHsSoabVTvjN4msaT
+eTZcVAY9HA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f4a5fb45-0f4c-4140-949b-24325bd6652f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zGOwbWl5lonnbdRF+U1DTl5M8plXDwoxSI2+gm4fMj3NNR9JvPSoFtoyxStJ/39d3xSiETnT5ots
+jy73Tuk2Mw==</DigestValue></Reference></SignedInfo><SignatureValue>HS6L/QLksY1Fh76kdi4DHYU1yH5ulPkuJ621R/3kFkgQ0Xm5Y1ZOd3EmpwPaS6Tor7C3HYPuzC6B
+WW7oiNj7HzdFNcBrvRNU5OHAckWJrPDEvbzYZodBxgQBmPP0TpHrZdHTZ6jGZFch5WFx/nvI/P2w
+kJ4qYz7tkYJ1ViIFinqham2AjUmd4qEmNlI0uL/KGMHx4xTfq3AFTZiHrrathdfjgkRMokUhuhg8
+/ZOlexZyi7I80WUPj+imMrdQIAqHxpQAtboqxq3BQUjY61uN79dG+HwtXyWq8QEQFJgrvNAC57aP
+G28D8OYk89tbbsF3t2osXH/uu5J+hWhvK80M8Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -522,4 +518,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2fc20b15-00c7-4ff0-b04d-ff894c542fa4" Target="#_e9fb68e1-97c2-41ef-b7f1-ed51812316ae"><Timestamp>2020-01-18 08:33:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f4a5fb45-0f4c-4140-949b-24325bd6652f" Target="#_9421f132-7221-4cd6-92ec-251ab48b92ff"><Timestamp>2020-01-18 09:37:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
