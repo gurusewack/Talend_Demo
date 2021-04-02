@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
-  <TalendProperties:Project xmi:id="_J90ugTBdEeqZhqr3XTVthA" label="Talend_Demo" description="Demo Projects" language="java" technicalLabel="TALEND_DEMO" creationDate="2019-12-31T13:03:24.860+0530" author="_J90ugjBdEeqZhqr3XTVthA" productVersion="Talend Cloud Real-Time Big Data Platform-7.2.1.20190909_1200_patch" url="{&quot;location&quot;:&quot;https://github.com/gurusewack/Talend_Demo.git&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+  <TalendProperties:Project xmi:id="_J90ugTBdEeqZhqr3XTVthA" label="Talend_Demo" description="Talend_Demo" language="java" technicalLabel="TALEND_DEMO" creationDate="2019-12-31T13:03:24.860+0530" author="_J90ugjBdEeqZhqr3XTVthA" productVersion="Talend Cloud Data Management Platform-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/gurusewack/Talend_Demo&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
     <migrationTask xmi:id="_KEjBkDBdEeqZhqr3XTVthA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_J90ugjBdEeqZhqr3XTVthA" login="guruswami@itshoulders.com" firstName="Guruswaami" lastName="Seenivasan" type="MDM" additionnalData="{}"/>
@@ -11,4 +11,6 @@
   <TalendProperties:User xmi:id="_ytc60jHGEeq0jPqV0V4p7A" login="naveenkumarn@nfr.itshoulders.com" firstName="Naveen Kumar" lastName="Nagarajan" type="DQ"/>
   <TalendProperties:User xmi:id="_ytc60zHGEeq0jPqV0V4p7A" login="guruswami@nfr.itshoulders.com" firstName="Guruswami" lastName="VS" type="DQ"/>
   <TalendProperties:User xmi:id="_ytc61DHGEeq0jPqV0V4p7A" login="mayar@nfr.itshoulders.com" firstName="Maya" lastName="Raghavan" type="DQ"/>
+  <TalendProperties:User xmi:id="_fqRvAJN-EeudovSRRbKRDA" login="jayachandra.yarlagadda@trial33487.us.talend.com" firstName="Jayachandra" lastName="Yarlagadda" type="DQ"/>
+  <TalendProperties:User xmi:id="_fqRvAZN-EeudovSRRbKRDA" login="jayachandra.yarlagadda@trial33487.us.talend.com" firstName="Jayachandra" lastName="Yarlagadda" type="DQ"/>
 </xmi:XMI>
