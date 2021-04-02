@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.example.talend_demo</groupId>
     <artifactId>code.Master</artifactId>
-    <version>7.2.1</version>
+    <version>7.3.1</version>
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.talend_demo.job</groupId>
@@ -19,11 +19,11 @@
     <current.int-resources.dir>${basedir}/src/main/resources</current.int-resources.dir>
     <talend.job.version>0.1</talend.job.version>
     <talend.project.name.lowercase>talend_demo</talend.project.name.lowercase>
-    <talend.job.path>talend_demo/demo_taks_001_0_1</talend.job.path>
+    <talend.job.path>talend_demo</talend.job.path>
     <project.distribution-management.repository.id>${project.distributionManagement.repository.id}</project.distribution-management.repository.id>
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TALEND_DEMO</talend.project.name>
-    <talend.product.version>7.2.1.20190909_1200_patch</talend.product.version>
+    <talend.product.version>7.3.1.20200219_1130</talend.product.version>
     <talend.job.finalName>demo_taks_001_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.talend_demo.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.talend_demo.code</talend.routine.groupid>
@@ -53,9 +53,9 @@
       <version>6.0.0-SNAPSHOT</version>
     </dependency>
     <dependency>
-      <groupId>dom4j</groupId>
+      <groupId>org.dom4j</groupId>
       <artifactId>dom4j</artifactId>
-      <version>1.6.1</version>
+      <version>2.1.1</version>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
@@ -63,9 +63,24 @@
       <version>1.2.17</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-to-slf4j</artifactId>
+      <version>2.12.1</version>
+    </dependency>
+    <dependency>
       <groupId>org.talend.libraries</groupId>
       <artifactId>org.talend.dataquality.parser</artifactId>
-      <version>6.0.0</version>
+      <version>7.3.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.25</version>
     </dependency>
     <dependency>
       <groupId>org.talend.libraries</groupId>
@@ -75,7 +90,7 @@
     <dependency>
       <groupId>org.example.talend_demo.code</groupId>
       <artifactId>routines</artifactId>
-      <version>7.2.1</version>
+      <version>7.3.1</version>
     </dependency>
   </dependencies>
   <build>

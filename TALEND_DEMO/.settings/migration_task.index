@@ -255,6 +255,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.designer.core.utils.FillTRunJobReferenceParametersMigrationTask",
+    "breaks" : "7.1.0",
+    "version" : "7.1.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.designer.dbmap.migration.DBMapSplitTableConstraintFiltersMigrationTask",
     "breaks" : "5.1.2",
     "version" : "5.6.0",
@@ -745,6 +750,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.AddEncodingTypeForDQComponentsTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.AddFailOnErrorOnTFileCopyTDI38441",
     "breaks" : "6.3.1",
     "version" : "6.4.0",
@@ -773,6 +783,11 @@
     "id" : "org.talend.repository.model.migration.AddLoginTypeForSalesforceMigrationTask",
     "breaks" : "5.4.0",
     "version" : "5.4.1",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.AddMissingContextMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.AddMomInputToComponentsListMigrationTask",
@@ -829,6 +844,11 @@
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.AddRAWFlowMaskingComponents",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.AddRenameOnFileCopyMigrationTask",
     "breaks" : "5.1.1",
@@ -900,6 +920,11 @@
     "version" : "6.1.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.ChangeCDCTypeForOracle18TDI43319",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.ChangeColumnDelimiter4tExaBulkExec",
     "breaks" : "6.5.0",
     "version" : "6.5.0",
@@ -919,6 +944,11 @@
     "breaks" : "6.1.0",
     "version" : "6.1.1",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.ChangeDBVersionValue4BonitaComponentsTDI43395",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.ChangeDBversionForSybaseIQMigrationTask",
     "breaks" : "6.3.1",
@@ -984,6 +1014,11 @@
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.ChangeDefaultValueTDI36397",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.ChangeDefaultValueTDIBug16919",
     "breaks" : "5.1.1",
@@ -1264,6 +1299,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.CleanLoginAndPasswordForRedshiftSqlForSSO",
+    "breaks" : "7.2.1",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.ConnectionAddUniqueNameMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -1369,6 +1409,11 @@
     "version" : "5.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.FixProjectResourceLink",
+    "breaks" : "5.1.1",
+    "version" : "5.1.2",
+    "status" : "noimpact"
+  }, {
     "id" : "org.talend.repository.model.migration.FixUnevenItemContextParametersMigrationTask",
     "breaks" : "6.1.0",
     "version" : "6.4.0",
@@ -1378,6 +1423,11 @@
     "breaks" : "5.1.9",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.GenerateJobPomMigrationTask",
+    "breaks" : "7.0.1",
+    "version" : "7.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.HandleOracleSchemaMigrationTask",
     "breaks" : "5.1.1",
@@ -1488,6 +1538,11 @@
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.OracleSPAutomappingDateToTimestampTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.PostgresqlDefaultDBVersion",
     "breaks" : "7.1.0",
@@ -1768,6 +1823,11 @@
     "version" : "6.1.2",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.SAPBAPIParameterTypeMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.SafelyCreateTemporaryFileMigrationTask",
     "breaks" : "7.2.0",
     "version" : "7.2.1",
@@ -2006,6 +2066,11 @@
     "version" : "6.2.0",
     "status" : "noimpact"
   }, {
+    "id" : "org.talend.repository.model.migration.UpgradePasswordEncryptionAlg4ItemMigrationTask",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
+  }, {
     "id" : "org.talend.repository.model.migration.UpgradetDenormalizeMigrationTask",
     "breaks" : "5.1.1",
     "version" : "5.1.2",
@@ -2015,6 +2080,11 @@
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.UseDefaultJSONWrappingStandard",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.UseOracle11VersionInsteadOfRemoved",
     "breaks" : "7.1.0",
@@ -2035,6 +2105,11 @@
     "breaks" : "5.1.1",
     "version" : "5.1.2",
     "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.changeDBVersionForMapROJAIOutputMigrationTask",
+    "breaks" : "7.0.0",
+    "version" : "7.0.1",
+    "status" : "ok"
   }, {
     "id" : "org.talend.repository.model.migration.changeReturnTypeOfServerAliveResult",
     "breaks" : "5.1.1",
@@ -2074,6 +2149,11 @@
     "id" : "org.talend.repository.model.migration.spark.StripslachesOnQuotesForTCollectAndCheck",
     "breaks" : "6.1.0",
     "version" : "6.1.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.repository.model.migration.spark.UpdateDatesPatternAccordingToDeletedTimestampOption",
+    "breaks" : "7.3.0",
+    "version" : "7.3.1",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.repository.model.migration.spark.UseSqlDateTypeInDataframesTask",
@@ -2149,6 +2229,11 @@
     "id" : "org.talend.repository.storm.repository.migration.UnifyPasswordEncryption4ParametersInStormJobMigrationTask",
     "breaks" : "5.6.0",
     "version" : "5.6.0",
+    "status" : "noimpact"
+  }, {
+    "id" : "org.talend.sdk.component.studio.metadata.migration.EncryptTckMetadataMigrationTask",
+    "breaks" : "7.1.0",
+    "version" : "7.3.0",
     "status" : "noimpact"
   }, {
     "id" : "org.talend.testcontainer.core.ui.migration.TestCaseParentVersionMigrationTask",
