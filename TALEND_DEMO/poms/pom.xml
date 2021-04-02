@@ -11,6 +11,7 @@
   <modules>
     <module>code/routines</module>
     <module>jobs/process/Workout/demo_taks_001_0.1</module>
+    <module>jobs/process/WS_Munees/dynamicmigration_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
