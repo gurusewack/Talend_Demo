@@ -46,7 +46,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:s3eO0oYKNTi1clNqdbE2yuMxAJuTkzFYXtKFXljs"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YxQuDB7er0ZkStIIsO3ORZAjwoL7gGUxkFmV3IY7"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -81,7 +81,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:lZ7LrBcLLpIDxeyM+JOaO7r+jvX1QoisS/iCx04d"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cs4O95XL7PpUowTbdtLTM5yuitjBQxDohz8Z29tV"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -127,7 +127,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Nw0ZloKf8zcuDjjq/8j3d6lYXXtQVnAKo5FAcfQ0fv51lT/UxyCb"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fYRaFTE60O43tQGk+1o+oVi5XwDeKOEQvHVQb0nhI1ompirP08tH"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SSOT_ETL_PROCESS_CONTROL&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -188,7 +188,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:9t50A1P7Tie4rm9zfFbv5vhWZxBfMqK/ynhY9lWjo0R/5tRHaMdt"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:HpGIg6PwS9e2yuMG3iBTboKqR+SwhW5/yWqeavf4KleFImvZl24J"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -259,7 +259,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;tmp&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Ie7ihDmqXFcrjUtJG+IzpllNF7T9nssy9/MNYZRDcwVd5GtgUxP2"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8LdLIYihlkOZOXhD9UwikvtTRHhsAKyZla0mDcLb+sKDJrQE8kJS"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.target_table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -319,7 +319,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:d7TnSMEA8NkSa66yRBadBsguzsLUQUzRPQ7zDjoi/mVt7se3FE0S"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:b/4iN0wXrEBGJJwfRcnmpph/iPv1QRNBupl2dRIRfBN0Va7wyylF"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SSOT_ETL_PROCESS_CONTROL&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -377,7 +377,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:s73WkdrTJcJldKeEW1CZRfuMxYdXldImREqsIVLiVwXMQqnSHLLV"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ZzhXYCXPf0465RLHJrI1I0QjTjR9Yo9hqthZoGh0GZDWsv8j1Cmm"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -407,7 +407,7 @@
   </node>
   <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="512">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_3"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;Dynamic columns = row22.data;&#10;String removeColumn=&quot;&quot;;&#10;&#10;for (int i = 0; i &lt; columns.getColumnCount(); i++) &#10;{&#10;DynamicMetadata columnMetadata = columns.getColumnMetadata(i);&#10;if(columnMetadata.getName()==context.primary_key)&#10;{&#10;//columns.removeDynamicElement(columnMetadata.getName());&#10;removeColumn=columnMetadata.getName();&#10;System.out.println(columnMetadata.getName());&#10;}&#10;}&#10;System.out.println(removeColumn);&#10;columns.removeDynamicElement(removeColumn);&#10;row2.data=columns;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#10;&#10;Dynamic columns = row22.data;&#10;String removeColumn=&quot;&quot;;&#10;&#10;for (int i = 0; i &lt; columns.getColumnCount(); i++) &#10;{&#10;DynamicMetadata columnMetadata = columns.getColumnMetadata(i);&#10;System.out.println(columnMetadata.getName());&#10;if(columnMetadata.getName()==context.primary_key)&#10;{&#10;//columns.removeDynamicElement(columnMetadata.getName());&#10;removeColumn=columnMetadata.getName();&#10;System.out.println(columnMetadata.getName());&#10;}&#10;}&#10;System.out.println(removeColumn);&#10;columns.removeDynamicElement(removeColumn);&#10;row2.data=columns;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_3">
@@ -452,7 +452,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;tmp&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fwlH5jRYNOP+dYvq31gAp/Rlh/aW8wmxK/WKPY6uGLomaRUJZmV8"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8ZmiB3+NUEkCfdZNEu+Jar+GpdVg27nO1ZCeygPBFaxZJMEmnZFJ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.target_table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -513,7 +513,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hn+GXe0VIWHgDMC7+dXh/KrAGMiQr88LASRJmw3rFws7iPChnkHA"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:a48Rf/jFfORM/d9eCDkd1wFSOqtruxNmKmEDvUqW+FSFKsG11tsQ"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;SSOT_ETL_PROCESS_CONTROL&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -574,7 +574,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="&quot;demo&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:RtzV7GdjsH/2xmpEhYYStL4MfsZfUM/7AmS2ZBrHlnoc7RlJL+NL"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NCXHtAgJqHNstjVrVaaLSbL5/CbIJYfmBa7wVVMxc6AjAbGr8dno"/>
     <elementParameter field="DBTABLE" name="TABLE" value=""/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -641,7 +641,7 @@
     <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" value="&quot;tmp&quot;"/>
     <elementParameter field="TEXT" name="USER" value="&quot;dbadmin&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YdVMgTgPLASvivgZ8RFZKflPJ7g57hKFDIFidH6c8sApcTJoZDSf"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4PNvkrz2i0i/XbUkh9sKqMC14WHhUgsziIgrS5QJzAOZBKty3Ei1"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.target_table_name"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="DROP_IF_EXISTS_AND_CREATE"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -809,13 +809,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c4c80d24-ac9a-487e-b371-b40959d43887"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bXiRfCS1ALPU7NljBBBA0fQXKKr7ihEyvMIphORhLsinK1AirF7CCyzvq3sOIqBwW6GzKf7kUCas&#13;
-RiNg+43Guw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_73ead516-1f5e-425f-977b-c21c8985111f"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>iODFICOGsH6nbeksx+CjExvwrNk24/Q85nrkljK5vETntUt2bIqi7ye2BTApt5BU94T/CvZBOJY4&#13;
-23fnfAC7cw==</DigestValue></Reference></SignedInfo><SignatureValue>VyV6FhiuiUGToQaO+uZ5U2IO1ndR7IwFFIlieDmE6Qky2NAEoovkYSdupYw2VlK2OGXoXe1KaXHD&#13;
-WZUFRqQ/ceerc/iLTHRkxlDMAENCTGGNJ5Qkk9Z6T6NsmKFxmpoBlybggg3cZZBQ9amInkiRnvFt&#13;
-dDb2WpdnoF0ubn5AJo0WjkGVO4rVHpQezOA09JiZ7MCiO8v8xwbZdYU8a4xSFCsq/ZKIYzH2uEOr&#13;
-vJWghZsQlbTF27rDehZWI8D02xbB16A834S8+Dp2hNxz4VJwHWEEYc5+v9HK03bTLeIa2xQ+PZAr&#13;
-HTx/ybAjddwYfmfgvhspSrde2JuoNbXG7utS7g==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_27a1c89d-3b11-4056-ae66-5c565b5bb7b7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7O7xDea5y0266YZLFnqr55q1JCBE+hG3W8TYhCkvvKU7JLisSTej3Zm17HsGxx0DsMR84tJzgKbR&#13;
+HPcKQg6vdg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_129222e6-86b2-4ed0-aeb7-65980ff5f5dd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TBzmgz5O8sc+eBCc0kX7b4fetaz/C2ZanlyPsOnT0xuiB9GSa858Y6HCE0BaMexKip9RbsI9o25J&#13;
+iph5+vLAHQ==</DigestValue></Reference></SignedInfo><SignatureValue>LZC9iORVzyn5IEQuS0PSkmxCEx9V5CGok9Rr2FW82zuNRRNpen3SriNi1UimkOzy+hI/dlcIIV8c&#13;
+r0o7Gx2Zsdmhm+hfaFgtkVQB1j2GSkTC39zDA6WuQ/X0ZErSM0slrj6896e1COUvtbAexGULu1bQ&#13;
+izRy7YYtYBc9Fm9MzMUbF1p0u5zgw5TSqN2gS1G+EZ9s4OJz9latvdNXVJL/ro+mmhP1Mf3S0Znv&#13;
+1HlUGYt9TeF/YazZdv3+md00ELuWgF1MLQ5/0h8pKW6Ri9ZUnEKhksnIFnBiLwkh+ocFQNt45Pyv&#13;
+GKa6D9aalXT5Bw12+RXofe2RnOJsjtgmUbweNg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -837,4 +837,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_73ead516-1f5e-425f-977b-c21c8985111f" Target="#_c4c80d24-ac9a-487e-b371-b40959d43887"><Timestamp>2021-04-05 08:03:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_129222e6-86b2-4ed0-aeb7-65980ff5f5dd" Target="#_27a1c89d-3b11-4056-ae66-5c565b5bb7b7"><Timestamp>2021-04-05 08:04:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
