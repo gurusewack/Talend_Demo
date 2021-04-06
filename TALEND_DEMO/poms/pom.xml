@@ -19,7 +19,7 @@
     <module>jobs/process/WS_Munees/dynamic_inc_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_etl_pipeline_1_0.1</module>
     <module>jobs/process/WS_Munees/Natarra_jobs/WS_Munees/copy_of_dynamic_etl_pipeline_0.1</module>
-    <module>jobs/process/WS_Munees/Natarra_jobs/WS_Munees/dynamic_etl_pipeline_0.1</module>
+    <module>jobs/process/WS_Munees/Natarra_jobs/dynamic_etl_pipeline_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
