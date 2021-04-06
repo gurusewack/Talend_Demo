@@ -17,7 +17,7 @@
     <module>jobs/process/WS_Munees/copy_of_demo_job_natarra_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_migration_demo_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_inc_0.1</module>
-    <module>jobs/process/WS_Munees/dynamic_etl_pipeline_0.1</module>
+    <module>jobs/process/WS_Munees/dynamic_etl_pipeline_1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
