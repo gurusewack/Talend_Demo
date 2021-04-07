@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
   <TalendProperties:Project xmi:id="_J90ugTBdEeqZhqr3XTVthA" label="Talend_Demo" description="Talend_Demo" language="java" technicalLabel="TALEND_DEMO" creationDate="2019-12-31T13:03:24.860+0530" author="_J90ugjBdEeqZhqr3XTVthA" productVersion="Talend Cloud Data Management Platform-7.3.1.20200219_1130" url="{&quot;commitLogPattern&quot;:&quot;{0}&quot;,&quot;location&quot;:&quot;https://github.com/gurusewack/Talend_Demo&quot;,&quot;settings&quot;:&quot;000&quot;,&quot;storage&quot;:&quot;git&quot;}" type="DQ" itemsRelationVersion="1.3" bigData="false">
+    <componentsSettings xmi:id="_ztpNMJeQEeu4Sv0ZOHn2aA" name="DI|tHashInput" family="Technical"/>
+    <componentsSettings xmi:id="_0TkkwJeQEeu4Sv0ZOHn2aA" name="DI|tHashOutput" family="Technical"/>
     <migrationTask xmi:id="_KEjBkDBdEeqZhqr3XTVthA" id="org.talend.repository.model.migration.CheckProductVersionMigrationTask" breaks="7.1.0" version="7.1.1"/>
   </TalendProperties:Project>
   <TalendProperties:User xmi:id="_J90ugjBdEeqZhqr3XTVthA" login="guruswami@itshoulders.com" firstName="Guruswaami" lastName="Seenivasan" type="MDM" additionnalData="{}"/>
