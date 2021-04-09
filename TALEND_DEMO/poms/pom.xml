@@ -32,6 +32,7 @@
     <module>jobs/process/WS_Munees/Demo/columnmapping_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_etl_pipeline_b_04092021_0.1</module>
     <module>jobs/process/WS_Munees/Demo/metadata_changes_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/metadata_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
