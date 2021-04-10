@@ -19,7 +19,6 @@
     <module>jobs/process/WS_Munees/dynamic_inc_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_etl_pipeline_1_0.1</module>
     <module>jobs/process/WS_Munees/copy_of_dynamic_etl_pipeline_0.1</module>
-    <module>jobs/process/WS_Munees/dynamic_etl_pipeline_0.1</module>
     <module>jobs/process/WS_Munees/dynamic_etl_pipeline_v1_0.1</module>
     <module>jobs/process/WS_Munees/mql_request__history_0.1</module>
     <module>jobs/process/WS_Munees/metadata_change_capture_0.1</module>
@@ -35,6 +34,7 @@
     <module>jobs/process/WS_Munees/Demo/test1_0.1</module>
     <module>jobs/process/WS_Munees/Demo/columnmapping_1_0.1</module>
     <module>jobs/process/WS_Munees/Demo/columnmapping_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/dynamic_etl_pipeline_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
