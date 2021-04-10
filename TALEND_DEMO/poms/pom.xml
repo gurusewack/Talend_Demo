@@ -34,6 +34,7 @@
     <module>jobs/process/WS_Munees/Demo/metadata_changes_0.1</module>
     <module>jobs/process/WS_Munees/Demo/metadata_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_columnmapping_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/test1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
