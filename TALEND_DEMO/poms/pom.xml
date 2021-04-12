@@ -39,6 +39,7 @@
     <module>jobs/process/WS_Munees/Demo/columnmapping_v1_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_columnmapping_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_columnmapping_a_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/copy_of_copy_of_columnmapping_a_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
