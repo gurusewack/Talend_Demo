@@ -1,0 +1,55 @@
+package routines;
+
+public class MySQLSnowflake {
+    
+    public static String DataType(String dataType)
+    {
+    	switch(dataType)  
+        {  
+            case "TINYINT": 
+            	return "TINYINT";
+            case "SMALLINT": 
+            	return "SMALLINT";
+            case "MEDIUMINT": 
+            	return "INTEGER";
+            case "INT":
+            	return "INTEGER";
+            case "BIGINT": 
+            	return "BIGINT";
+            case "FLOAT":
+            	return "FLOAT";
+            case "DOUBLE":
+            	return "DOUBLE";
+            case "BIT":
+            	return "BOOLEAN";
+            case "CHAR":
+            	return "CHAR";
+            case "VARCHAR":
+            	return "VARCHAR";
+            case "BINARY":
+            	return "BINARY";
+            case "VARBINARY":
+            	return "VARBINARY";
+            case "TINYTEXT":
+            	return "TEXT";
+            case "TEXT":
+            	return "TEXT";
+            case "MEDIUMTEXT":
+            	return "TEXT";
+            case "ENUM":
+            	return "VARCHAR";
+            case "SET":
+            	return "VARCHAR";
+            case "DATE":
+            	return "DATE";
+            case "TIME":
+            	return "TIME";
+            case "DATETIME":
+            	return "DATETIME";
+            case "TIMESTAMP":
+            	return "TIMESTAMP";
+            default:   
+                return "VARCHAR";  
+        } 	
+    }
+}
