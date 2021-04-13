@@ -885,10 +885,6 @@
     "version" : "Latest",
     "type" : "context"
   }, {
-    "id" : "TALEND_DEMO:_5C4sEJaqEeukrPzgPfjtJQ",
-    "version" : "Latest",
-    "type" : "job"
-  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
