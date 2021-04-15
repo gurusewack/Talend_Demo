@@ -48,6 +48,10 @@
     <module>jobs/process/WS_Munees/Demo/copy_of_final_columnmapping_c_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_final_columnmapping_v2_0.1</module>
     <module>code/beans</module>
+    <module>jobs/process/MDW/metadatamgmt_0.1</module>
+    <module>jobs/process/MDW/snflk_ddl_0.1</module>
+    <module>jobs/process/MDW/copy_of_metadatamgmt_0.1</module>
+    <module>jobs/process/MDW/copy_of_copy_of_metadatamgmt_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

@@ -4,7 +4,7 @@ public class MySQLSnowflake {
     
     public static String DataType(String dataType)
     {
-    	switch(dataType)  
+    	switch(dataType.toUpperCase())  
         {  
             case "TINYINT": 
             	return "TINYINT";
@@ -48,6 +48,8 @@ public class MySQLSnowflake {
             	return "DATETIME";
             case "TIMESTAMP":
             	return "TIMESTAMP";
+            case "DECIMAL":
+            	return "NUMBER";
             default:   
                 return "VARCHAR";  
         } 	

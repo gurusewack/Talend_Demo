@@ -1,0 +1,35 @@
+package routines;
+
+public class SnowflakeDDL {
+	public static String CreateTable(String targetTableName,String query)
+    {
+		String c_query="";
+		c_query= String.format("CREATE TABLE IF NOT EXISTS %1$s (\n" + 
+				"%2$s )",targetTableName, query);
+		return c_query;
+    }
+	
+	public static String CreateTable(String targetSchemaName, String targetTableName,String query)
+    {
+		String c_query="";
+		c_query= String.format("CREATE OR REPLACE TABLE \"%1$s\".%2$s ( \n" + 
+				"%3$s );",targetSchemaName, targetTableName, query);
+		return c_query;
+    }
+	
+	public static String RenameColumn(String tableName,String oldName, String newName)
+    {
+		String c_query="";
+		c_query= String.format("ALTER TABLE %1$s RENAME COLUMN %2$s TO %3$s;",tableName, oldName, newName);
+		return c_query;
+    }
+	
+	public static String AddNewColumn(String tableName, String cQuery)
+    {
+		String c_query="";
+		c_query= String.format("ALTER TABLE %1$s\n" + 
+				"ADD\n" +
+				"%2$s;",tableName, cQuery);
+		return c_query;
+    }
+}
