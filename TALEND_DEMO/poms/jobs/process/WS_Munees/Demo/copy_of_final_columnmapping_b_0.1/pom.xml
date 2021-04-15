@@ -362,11 +362,6 @@
       <artifactId>routines</artifactId>
       <version>7.3.1</version>
     </dependency>
-    <dependency>
-      <groupId>org.example.talend_demo.job</groupId>
-      <artifactId>Dynamic_ETL_Pipeline</artifactId>
-      <version>0.1.0</version>
-    </dependency>
   </dependencies>
   <build>
     <finalName>${talend.job.finalName}</finalName>
