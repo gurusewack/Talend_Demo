@@ -8,22 +8,22 @@
     <contextParameter comment="" name="connection_s3_accessKey" prompt="connection_s3_accessKey?" promptNeeded="false" repositoryContextId="_QsXQcPpiEemFIs-ZZJ2W5g" type="id_String" value="AKIA4HP3E2JNYITIQ6MQ"/>
     <contextParameter comment="" name="connection_s3_bucket" prompt="connection_s3_bucket?" promptNeeded="false" repositoryContextId="_QsXQcPpiEemFIs-ZZJ2W5g" type="id_String" value="impv-bireporting"/>
     <contextParameter comment="" name="connection_s3_folder" prompt="connection_s3_folder?" promptNeeded="false" repositoryContextId="_QsXQcPpiEemFIs-ZZJ2W5g" type="id_String" value="staging"/>
-    <contextParameter comment="" name="connection_s3_secretKey" prompt="connection_s3_secretKey?" promptNeeded="false" repositoryContextId="_QsXQcPpiEemFIs-ZZJ2W5g" type="id_Password" value="enc:system.encryption.key.v1:H5uwc4CHprQFDYfxTTc7XdsDp895AmzZv/3rWFmb6kPKdDgnUirmoA9dZ+KtLT4gz2Kt7E26gsX6yDNeYMrtfM2Vvt8="/>
-    <contextParameter comment="" name="connection_impSalesforce_pass" prompt="connection_impSalesforce_pass?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:m70rftPt/Kl0nr2RbDsXp0vpimLA/xTC671bf4bFsrwm2nqlSGWiluNc3rke"/>
-    <contextParameter comment="" name="connection_impSalesforce_password" prompt="connection_impSalesforce_password?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:kVsTpjtyZk1TIwZtXRmuP+cohybC0qGDHl/uvjGb9+qSfxM87j4G+pSBXKU="/>
-    <contextParameter comment="" name="connection_impSalesforce_secret" prompt="connection_impSalesforce_secret?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:XVbOtE+nTjN4GuXcfljZwp/EW1QCO2YBlPfibLEAIMZr7OmgXq3nSGLh9+K30W8tV03cnw=="/>
-    <contextParameter comment="" name="connection_impSalesforce_securityToken" prompt="connection_impSalesforce_securityToken?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:1syte9aVT6w8bd9j3Z9f8XYeljFKmvDHZgVyhZgcDABbe2zHUlx/WbjiGfI3pbYDCl2SKA=="/>
+    <contextParameter comment="" name="connection_s3_secretKey" prompt="connection_s3_secretKey?" promptNeeded="false" repositoryContextId="_QsXQcPpiEemFIs-ZZJ2W5g" type="id_Password" value="enc:system.encryption.key.v1:wbPwtuOucpQqsrDkOnDy/aZsfBu1XLb/4bVh2tT8+7zaWwvJbwCHrLrn7vLsSzSMeDgXdEOCLocERNtfOc+JmHDYq/o="/>
+    <contextParameter comment="" name="connection_impSalesforce_pass" prompt="connection_impSalesforce_pass?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:uzyhJ8L/yalbQqiQXKlPqetci01j4ZkknH7VVpQ11Lxoaa4OafFnbhbzKZCv"/>
+    <contextParameter comment="" name="connection_impSalesforce_password" prompt="connection_impSalesforce_password?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:POLGRwi3kTt6kWcEnrLp13h8RCertAt+rSpy1/ngmtC4gTMPoNTxtIxAAzY="/>
+    <contextParameter comment="" name="connection_impSalesforce_secret" prompt="connection_impSalesforce_secret?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:fwamF9x+gKyd5j5WTP7IVArNT+xL3K0lPtXyq3nZw7B+RWRXccKToFObIvo10IF20g3U8g=="/>
+    <contextParameter comment="" name="connection_impSalesforce_securityToken" prompt="connection_impSalesforce_securityToken?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:1A1zghAmJ1ISu+OYjIs2LDkyFGoLDqq74ilNFtQUMhrkEP0ID2pYW+Z21ScsDhOhpHB8ng=="/>
     <contextParameter comment="" name="connection_impSalesforce_url" prompt="connection_impSalesforce_url?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_String" value="https://test.salesforce.com/services/Soap/u/45.0"/>
     <contextParameter comment="" name="connection_impSalesforce_user" prompt="connection_impSalesforce_user?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_String" value="slalom.itapps@imperva.com.fullcopy2"/>
     <contextParameter comment="" name="connection_impSalesforce_username" prompt="connection_impSalesforce_username?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_String" value="slalom.itapps@imperva.com.fullcopy2"/>
     <contextParameter comment="" name="connection_incSalesforce_last_n_days" prompt="connection_incSalesforce_last_n_days?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Integer" value="10"/>
-    <contextParameter comment="" name="connection_incSalesforce_password" prompt="connection_incSalesforce_password?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:Mg4dBJ6h3DXydRT8mT85LohzCR97s0SDH3nUOmzTdZrBudC6TQKEHA=="/>
-    <contextParameter comment="" name="connection_incSalesforce_securityToken" prompt="connection_incSalesforce_securityToken?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:ydtR0EoqPLOB1YiXnj3bOPtrgI7R/FU1AIRjpJTRNbaMqgSDnrMrthlRu2JQ9r/MKHr5aA=="/>
+    <contextParameter comment="" name="connection_incSalesforce_password" prompt="connection_incSalesforce_password?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:J4vqJPClJOZZ24U6ClhJr0M4Jtjn9ZPB2xu+76OzB+QKeafuBZzjRg=="/>
+    <contextParameter comment="" name="connection_incSalesforce_securityToken" prompt="connection_incSalesforce_securityToken?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_Password" value="enc:system.encryption.key.v1:+Fwk8PQOYmg88GqxoJUPHZWb9VTvR+aRatxVCJb4qakq8hix+wPTqEWig4QmyPUIWu5Vag=="/>
     <contextParameter comment="" name="connection_incSalesforce_url" prompt="connection_incSalesforce_url?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_String" value="https://test.salesforce.com/services/Soap/u/45.0"/>
     <contextParameter comment="" name="connection_incSalesforce_username" prompt="connection_incSalesforce_username?" promptNeeded="false" repositoryContextId="_oG1NsPdrEemC87Rk5dCuIQ" type="id_String" value="slalom.itapps-incp@imperva.com.fullsb"/>
     <contextParameter comment="" name="connection_devSnowflake_database" prompt="connection_devSnowflake_database?" promptNeeded="false" repositoryContextId="_CW0tUPmpEem-W5pg2cVE4g" type="id_String" value="DEVELOPMENT"/>
     <contextParameter comment="" name="connection_devSnowflake_login_name" prompt="connection_devSnowflake_login_name?" promptNeeded="false" repositoryContextId="_CW0tUPmpEem-W5pg2cVE4g" type="id_String" value="data.lake@imperva.com"/>
-    <contextParameter comment="" name="connection_devSnowflake_password" prompt="connection_devSnowflake_password?" promptNeeded="false" repositoryContextId="_CW0tUPmpEem-W5pg2cVE4g" type="id_Password" value="enc:system.encryption.key.v1:Xl4iVKLuaB/Xeys/dR6olMJWtWsJlnVivlRkM2l1I+qVtEC6gVIQs1lIwE2db6bWajYs1M9J"/>
+    <contextParameter comment="" name="connection_devSnowflake_password" prompt="connection_devSnowflake_password?" promptNeeded="false" repositoryContextId="_CW0tUPmpEem-W5pg2cVE4g" type="id_Password" value="enc:system.encryption.key.v1:Xs0aDvoJsdlCLpw529HYgO24i/XFkppTlKAbi93njOgyNOtPzWZHyNxWFW7+jJh5JG4gEYat"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -64,7 +64,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:qkujU79q31mMKgcv5Fus90mg7vVwbq3V8WhCBZTH" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:jJHLQvdFSIdj+XluJ+wqgMWtpJwpPYuUGkgfey7o" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -99,7 +99,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FRP6woqwCXRg73nLmEa0U4321s0j3v1sjuex6S4K" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NDEn1PBE1fYsgkVjGtvwVp5coRTRrG6zBENnMATL" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
