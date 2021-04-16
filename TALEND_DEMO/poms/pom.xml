@@ -54,6 +54,7 @@
     <module>jobs/process/MDW/copy_of_copy_of_metadatamgmt_0.1</module>
     <module>jobs/process/MDW/test_demo_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_copy_of_final_columnmapping_v2_0.1</module>
+    <module>jobs/process/MDW/final_metadatamgmt_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
