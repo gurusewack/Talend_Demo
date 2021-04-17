@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2021-04-17T17:33:08.763+0530">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2021-04-17T17:33:17.456+0530">
   <deletedFolders>process/WS_Munees/Natarra_jobs/WS_Munees</deletedFolders>
   <deletedFolders>process/WS_Munees/Natarra_jobs</deletedFolders>
   <deletedFolders>process/WS_Munees/Demo/WS_Munees/Demo</deletedFolders>
@@ -11,4 +11,5 @@
   <deletedItems id="_1RgkgJ9jEeuRDZr8txvB8A" path="MDW" type="PROCESS"/>
   <deletedItems id="_W76MQJ3oEeu6Qsj-kJ9ieA" path="MDW" type="PROCESS"/>
   <deletedItems id="_EDChMJ6KEeuJfL84dCeXew" path="MDW" type="PROCESS"/>
+  <deletedItems id="_R6dlAJ5_EeuJfL84dCeXew" path="MDW" type="PROCESS"/>
 </recyclebin:RecycleBin>
