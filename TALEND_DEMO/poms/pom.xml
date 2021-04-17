@@ -43,6 +43,7 @@
     <module>jobs/process/MDW/snflk_ddl_0.1</module>
     <module>jobs/process/MDW/copy_of_metadatamgmt_0.1</module>
     <module>jobs/process/MDW/copy_of_final_metadatamgmt_0.1</module>
+    <module>jobs/process/MDW/metadatamgmt_v1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
