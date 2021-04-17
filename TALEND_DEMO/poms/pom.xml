@@ -37,11 +37,9 @@
     <module>jobs/process/WS_Munees/Demo/dynamic_etl_pipeline_0.1</module>
     <module>jobs/process/WS_Munees/Demo/columnmapping_v1_temp_0.1</module>
     <module>jobs/process/WS_Munees/Demo/columnmapping_v1_0.1</module>
-    <module>jobs/process/WS_Munees/Demo/copy_of_columnmapping_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_columnmapping_a_0.1</module>
     <module>jobs/process/WS_Munees/Demo/final_columnmapping_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_final_columnmapping_0.1</module>
-    <module>jobs/process/WS_Munees/Demo/copy_of_final_columnmapping_a_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_final_columnmapping_b_0.1</module>
     <module>jobs/process/WS_Munees/Demo/final_columnmapping_v2_0.1</module>
     <module>jobs/process/mql_request__history_0.1</module>
@@ -51,12 +49,8 @@
     <module>jobs/process/MDW/metadatamgmt_0.1</module>
     <module>jobs/process/MDW/snflk_ddl_0.1</module>
     <module>jobs/process/MDW/copy_of_metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/copy_of_copy_of_metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/test_demo_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_copy_of_final_columnmapping_v2_0.1</module>
-    <module>jobs/process/MDW/final_metadatamgmt_0.1</module>
     <module>jobs/process/MDW/copy_of_final_metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/copy_of_copy_of_metadatamgmt_a_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
