@@ -46,6 +46,7 @@
     <module>jobs/process/MDW/metadatamgmt_v1_0.1</module>
     <module>jobs/process/MDW/testdemo_0.1</module>
     <module>jobs/process/MDW/metadatamgmt_v01_0.1</module>
+    <module>jobs/process/MDW/copy_of_metadatamgmt_v1_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
