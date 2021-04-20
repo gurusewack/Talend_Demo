@@ -48,7 +48,7 @@
     <module>jobs/process/MDW/metadatamgmt_v01_0.1</module>
     <module>jobs/process/MDW/copy_of_metadatamgmt_v1_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_dynamic_etl_pipeline_b_0.1</module>
-    <module>jobs/process/Natarra_jobs/his_lead_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/his_lead_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
