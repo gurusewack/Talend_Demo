@@ -49,6 +49,7 @@
     <module>jobs/process/WS_Munees/Demo/copy_of_dynamic_etl_pipeline_b_0.1</module>
     <module>jobs/process/WS_Munees/Demo/his_lead_0.1</module>
     <module>jobs/process/MDW/testdata_load_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/dynamic_etl_pipeline_v_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
