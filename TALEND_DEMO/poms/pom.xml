@@ -39,17 +39,17 @@
     <module>jobs/process/WS_Munees/Demo/final_columnmapping_v2_0.1</module>
     <module>jobs/process/mql_request__history_0.1</module>
     <module>code/beans</module>
-    <module>jobs/process/MDW/metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/snflk_ddl_0.1</module>
-    <module>jobs/process/MDW/copy_of_metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/copy_of_final_metadatamgmt_0.1</module>
-    <module>jobs/process/MDW/metadatamgmt_v1_0.1</module>
-    <module>jobs/process/MDW/metadatamgmt_v01_0.1</module>
-    <module>jobs/process/MDW/copy_of_metadatamgmt_v1_0.1</module>
     <module>jobs/process/WS_Munees/Demo/copy_of_dynamic_etl_pipeline_b_0.1</module>
     <module>jobs/process/WS_Munees/Demo/his_lead_0.1</module>
-    <module>jobs/process/MDW/testdata_load_0.1</module>
     <module>jobs/process/WS_Munees/Demo/dynamic_etl_pipeline_v_0.1</module>
+    <module>jobs/process/Metadata_Change/copy_of_final_metadatamgmt_0.1</module>
+    <module>jobs/process/Metadata_Change/copy_of_metadatamgmt_0.1</module>
+    <module>jobs/process/Metadata_Change/copy_of_metadatamgmt_v1_0.1</module>
+    <module>jobs/process/Metadata_Change/metadatamgmt_0.1</module>
+    <module>jobs/process/Metadata_Change/metadatamgmt_v01_0.1</module>
+    <module>jobs/process/Metadata_Change/metadatamgmt_v1_0.1</module>
+    <module>jobs/process/Metadata_Change/snflk_ddl_0.1</module>
+    <module>jobs/process/Metadata_Change/testdata_load_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
