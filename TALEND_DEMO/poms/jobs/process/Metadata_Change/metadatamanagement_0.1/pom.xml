@@ -9,9 +9,9 @@
     <relativePath>../../../../</relativePath>
   </parent>
   <groupId>org.example.talend_demo.job</groupId>
-  <artifactId>MetadataMgmt_V1</artifactId>
+  <artifactId>MetadataManagement</artifactId>
   <version>0.1.0</version>
-  <name>TALEND_DEMO MetadataMgmt_V1-0.1.0 (0.1,Job Designs)</name>
+  <name>TALEND_DEMO MetadataManagement-0.1.0 (0.1,Job Designs)</name>
   <properties>
     <output.resources.dir>${talend.job.name}/src/main/resources</output.resources.dir>
     <talend.job.applyContextToChildren>false</talend.job.applyContextToChildren>
@@ -24,7 +24,7 @@
     <maven.build.timestamp.format>yyyy-MM-dd HHmmssSSS</maven.build.timestamp.format>
     <talend.project.name>TALEND_DEMO</talend.project.name>
     <talend.product.version>7.3.1.20200219_1130</talend.product.version>
-    <talend.job.finalName>metadatamgmt_v1_0_1</talend.job.finalName>
+    <talend.job.finalName>metadatamanagement_0_1</talend.job.finalName>
     <talend.pigudf.groupid>org.example.talend_demo.pigudf</talend.pigudf.groupid>
     <talend.routine.groupid>org.example.talend_demo.code</talend.routine.groupid>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
@@ -33,10 +33,10 @@
     <talend.job.context>Default</talend.job.context>
     <talend.job.date>${maven.build.timestamp}</talend.job.date>
     <current.resources.dir>${basedir}/src/main/ext-resources</current.resources.dir>
-    <talend.job.name>MetadataMgmt_V1</talend.job.name>
+    <talend.job.name>MetadataManagement</talend.job.name>
     <talend.job.id>_7CSq0J94EeuRDZr8txvB8A</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>mdw/</talend.job.folder>
+    <talend.job.folder>metadata_change/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>

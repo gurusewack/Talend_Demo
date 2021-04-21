@@ -47,9 +47,9 @@
     <module>jobs/process/Metadata_Change/copy_of_metadatamgmt_v1_0.1</module>
     <module>jobs/process/Metadata_Change/metadatamgmt_0.1</module>
     <module>jobs/process/Metadata_Change/metadatamgmt_v01_0.1</module>
-    <module>jobs/process/Metadata_Change/metadatamgmt_v1_0.1</module>
     <module>jobs/process/Metadata_Change/snflk_ddl_0.1</module>
     <module>jobs/process/Metadata_Change/testdata_load_0.1</module>
+    <module>jobs/process/Metadata_Change/metadatamanagement_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
