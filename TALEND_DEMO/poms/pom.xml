@@ -53,6 +53,7 @@
     <module>jobs/process/Metadata_Change/metadatamanagement_old_0.1</module>
     <module>jobs/process/Metadata_Change/metadata_management_0.1</module>
     <module>jobs/process/Metadata_Change/el_master_pipeline_0.1</module>
+    <module>jobs/process/Metadata_Change/el_metadata_mgmt_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
