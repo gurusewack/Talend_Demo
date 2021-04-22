@@ -32,4 +32,12 @@ public class SnowflakeDDL {
 				"%2$s;",tableName, cQuery);
 		return c_query;
     }
+	
+	public static String AlterLength(String tableName, String columnName, String dataType,Long dataLength)
+    {
+		String c_query="";
+		c_query= String.format("ALTER TABLE %1$s\n" + 
+				"	ALTER %2$s SET DATA TYPE %3$s(%4$s), COLUMN %5$s DROP DEFAULT;", tableName,columnName,dataType,dataLength,columnName);
+		return c_query;
+    }
 }
