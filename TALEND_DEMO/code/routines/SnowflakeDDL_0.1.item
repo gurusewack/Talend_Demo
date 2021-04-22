@@ -24,6 +24,13 @@ public class SnowflakeDDL {
 		return c_query;
     }
 	
+	public static String RenameColumn(String targetSchemaName, String tableName,String oldName, String newName)
+    {
+		String c_query="";
+		c_query= String.format("ALTER TABLE \"%1$s\".%2$s RENAME COLUMN %3$s TO %4$s;",targetSchemaName,tableName, oldName, newName);
+		return c_query;
+    }
+	
 	public static String AddNewColumn(String tableName, String cQuery)
     {
 		String c_query="";
