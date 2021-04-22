@@ -1,8 +1,73 @@
 package routines;
 
-public class MySQLSnowflake {
+public class MySQLSnowflake {	
+	
+	public static String DataType(String dataType)
+    {
+    	switch(dataType.toUpperCase())  
+        {  
+            case "TINYINT":
+            case "SMALLINT":
+            case "MEDIUMINT":
+            case "INT":
+            case "BIGINT":
+            case "FLOAT":
+            case "DOUBLE":
+            case "DECIMAL":
+            	return "NUMBER";
+            case "BIT":
+            	return "BOOLEAN";
+            case "CHAR":
+            case "VARCHAR":
+            case "TINYTEXT":           
+            case "MEDIUMTEXT":
+            case "TEXT":
+            	return "VARCHAR";
+            case "BINARY":
+            case "VARBINARY":
+            	return "BINARY";
+            case "ENUM":
+            	return "VARCHAR";
+            case "SET":
+            	return "VARCHAR";
+            case "DATE":
+            	return "DATE";
+            case "TIME":
+            	return "TIME";
+            case "DATETIME":
+            	return "DATETIME";
+            case "TIMESTAMP":
+            	return "TIMESTAMP";
+            default:   
+                return "VARCHAR";  
+        } 	
+    }
+	
+	public static String ColumnType(String columnName, String dataType, Long maximumLength, Integer numericPrecision, Integer numericScale)
+    {
+		
+		String value="";
+		if(dataType.toUpperCase().equals("VARCHAR") && maximumLength!=null) 
+		{
+			value= String.format("%1$s %2$s(%3$s)",columnName, dataType, (maximumLength > 16777216 ? 16777216 : maximumLength));
+		} 
+		else if(dataType.toUpperCase().equals("NUMBER") && numericPrecision!=null && numericScale!=null)
+		{
+			value= String.format("%1$s %2$s(%3$s,%4$s)",columnName, dataType,numericPrecision,numericScale);
+		}
+		else if(dataType.toUpperCase().equals("NUMBER") && numericPrecision!=null && numericScale == null)
+		{
+			value= String.format("%1$s %2$s(%3$s,%4$s)",columnName, dataType,numericPrecision,0);
+		}
+		else
+		{
+			value= String.format("%1$s %2$s",columnName, dataType);
+		}
+		return value;
+       
+    }
     
-    public static String DataType(String dataType)
+    public static String DataType01(String dataType)
     {
     	switch(dataType.toUpperCase())  
         {  
@@ -54,4 +119,6 @@ public class MySQLSnowflake {
                 return "VARCHAR";  
         } 	
     }
+    
+    
 }
