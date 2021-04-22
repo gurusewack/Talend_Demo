@@ -1553,6 +1553,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "TALEND_DEMO:_ya8jkKMzEeuPGcOwl5sKFQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
     "id" : "DQTechnical",
     "version" : "Latest",
     "type" : "routine"
