@@ -36,7 +36,7 @@
     <talend.job.name>TestData_load</talend.job.name>
     <talend.job.id>_9NKDEJ98EeuRDZr8txvB8A</talend.job.id>
     <talend.project.id>0</talend.project.id>
-    <talend.job.folder>mdw/</talend.job.folder>
+    <talend.job.folder>metadata_change/</talend.job.folder>
     <talend.job.framework></talend.job.framework>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <talend.job.type>Standard</talend.job.type>
