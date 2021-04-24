@@ -364,6 +364,11 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_demo.job</groupId>
+      <artifactId>EL_DYNAMIC_DATA_PIPELINE</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.example.talend_demo.job</groupId>
       <artifactId>SNFLK_DDL</artifactId>
       <version>0.1.0</version>
     </dependency>
