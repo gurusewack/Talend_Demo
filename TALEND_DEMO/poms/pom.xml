@@ -58,7 +58,7 @@
     <module>jobs/process/Metadata_Change/metadata_management_org_0.1</module>
     <module>jobs/process/Metadata_Change/el_metadata_mgmt_0.1</module>
     <module>jobs/process/Metadata_Change/el_dynamic_data_pipeline1_0.1</module>
-    <module>jobs/process/WS_Munees/Demo/Metadata_Change/el_dynamic_data_pipeline_0.1</module>
+    <module>jobs/process/WS_Munees/Demo/Metadata_Change/el_dynamic_data_pipeline_test_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
