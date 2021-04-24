@@ -364,7 +364,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend_demo.job</groupId>
-      <artifactId>EL_DYNAMIC_DATA_PIPELINE</artifactId>
+      <artifactId>EL_DYNAMIC_DATA_PIPELINE1</artifactId>
       <version>0.1.0</version>
     </dependency>
     <dependency>
